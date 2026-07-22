@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frost Buddy × TikTok Shop — Back to School Creator Challenge</title>
+<style>
+  :root{
+    --blue:#4da3e0; --blue-dark:#2f7fc1; --red:#e8503a; --orange:#f5a623;
+    --green:#2fae6b; --ink:#1e2430; --paper:#fff8f0; --card:#ffffff; --muted:#7a8494;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:linear-gradient(180deg,#fff 0%,var(--paper) 40%,#fde8cf 100%);color:var(--ink);min-height:100vh;}
+  .wrap{max-width:920px;margin:0 auto;padding:32px 20px 60px;}
+  .banner{text-align:center;margin-bottom:8px;}
+  .pill{display:inline-block;background:var(--red);color:#fff;font-weight:800;letter-spacing:.12em;font-size:12px;padding:6px 16px;border-radius:4px;transform:rotate(-1.5deg);text-transform:uppercase;}
+  h1{font-size:clamp(34px,6vw,56px);font-weight:900;color:var(--blue);text-shadow:2px 2px 0 #d9e8f5;margin:10px 0 2px;letter-spacing:-.01em;}
+  h1 .to{color:var(--red);}
+  .sub{font-weight:700;color:var(--ink);opacity:.75;margin-bottom:14px;}
+  .extbadge{display:inline-block;background:linear-gradient(135deg,var(--orange),var(--red));color:#fff;border-radius:22px;padding:9px 20px;font-size:14px;font-weight:800;margin:6px 0 12px;box-shadow:0 4px 14px rgba(232,80,58,.30);}
+  .updated{display:inline-block;background:#fff;border:1px solid #eadfce;border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;color:var(--muted);}
+  .countdown{font-weight:900;color:var(--red);}
+  .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:24px 0;}
+  .stat{background:var(--card);border-radius:14px;padding:16px;text-align:center;box-shadow:0 3px 14px rgba(30,36,48,.08);}
+  .stat .num{font-size:26px;font-weight:900;color:var(--blue-dark);}
+  .stat .lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
+  .stat.hot .num{color:var(--red);}
+  .section-title{font-size:22px;font-weight:900;color:var(--ink);margin:34px 0 4px;display:flex;align-items:center;gap:10px;}
+  .section-title .bar{flex:1;height:3px;background:linear-gradient(90deg,var(--orange),transparent);border-radius:2px;}
+  .section-note{font-size:12.5px;color:var(--muted);margin-bottom:12px;}
+  .board{background:var(--card);border-radius:16px;box-shadow:0 4px 20px rgba(30,36,48,.10);overflow:hidden;}
+  .row{display:flex;align-items:center;gap:13px;padding:14px 16px;border-bottom:1px solid #f0eee9;}
+  .row:last-child{border-bottom:none;}
+  .row.bubble{background:#fbfcfd;}
+  .rank{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;flex-shrink:0;background:#eef3f8;color:var(--blue-dark);}
+  .r1 .rank{background:linear-gradient(135deg,#ffd76e,#f5a623);color:#7a5200;font-size:21px;}
+  .r2 .rank{background:linear-gradient(135deg,#e8edf2,#c3ccd6);color:#5a6470;}
+  .r3 .rank{background:linear-gradient(135deg,#f3c9a8,#d99a62);color:#7a4a1e;}
+  .who{flex:1;min-width:0;}
+  .handle{font-weight:800;font-size:16px;}
+  .subline{font-size:12px;color:var(--muted);}
+  .meter{height:6px;background:#eef1f5;border-radius:3px;margin-top:7px;overflow:hidden;}
+  .meter i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--blue-dark));border-radius:3px;}
+  .r1 .meter i{background:linear-gradient(90deg,var(--orange),var(--red));}
+  .money{text-align:right;flex-shrink:0;}
+  .gmv{font-weight:900;font-size:18px;color:var(--ink);}
+  .gmvlbl{font-size:11px;color:var(--muted);}
+  .prize{margin-left:8px;background:#fff2ec;color:var(--red);font-weight:800;font-size:12px;padding:6px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0;min-width:96px;text-align:center;}
+  .prize.none{background:#f2f4f7;color:var(--muted);font-weight:700;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px;}
+  @media(max-width:660px){.twocol{grid-template-columns:1fr;}}
+  .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 4px 20px rgba(30,36,48,.10);}
+  .card h3{font-size:15px;font-weight:900;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;}
+  .ladder{width:100%;border-collapse:collapse;font-size:13.5px;}
+  .ladder td{padding:7px 4px;border-bottom:1px dashed #eee7dc;}
+  .ladder tr:last-child td{border-bottom:none;}
+  .ladder .amt{text-align:right;font-weight:900;color:var(--red);white-space:nowrap;}
+  .ladder .sub2{font-size:11px;color:var(--muted);font-weight:400;}
+  .callout{background:linear-gradient(135deg,var(--blue),var(--blue-dark));color:#fff;border-radius:16px;padding:24px;text-align:center;margin-top:28px;box-shadow:0 6px 24px rgba(47,127,193,.35);}
+  .callout .big{font-size:20px;font-weight:900;margin-bottom:8px;}
+  .callout .small{font-size:13.5px;opacity:.92;line-height:1.55;}
+  .discord{display:inline-block;margin-top:14px;background:#5865F2;color:#fff;font-weight:800;font-size:13px;padding:10px 22px;border-radius:24px;text-decoration:none;}
+  .foot{margin-top:26px;text-align:center;font-size:11.5px;color:var(--muted);line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="banner">
+    <span class="pill">TikTok Shop Exclusive</span>
+    <h1>BACK <span class="to">to</span> SCHOOL</h1>
+    <div class="sub">CREATOR CHALLENGE LEADERBOARD &nbsp;·&nbsp; July 13 – Aug 14 &nbsp;·&nbsp; $25,000 PRIZE POOL</div>
+    <div class="extbadge">🎉 JUST EXTENDED +2 WEEKS — now running through <b>August 14</b></div>
+    <span class="updated">Standings through July 19 · <span class="countdown">24 days left to climb</span></span>
+  </div>
+
+  <div class="statgrid">
+    <div class="stat hot"><div class="num">$38,770</div><div class="lbl">Campaign video sales<br>(videos posted Jul 13+)</div></div>
+    <div class="stat"><div class="num">1,668</div><div class="lbl">Creators posting</div></div>
+    <div class="stat"><div class="num">$5,352</div><div class="lbl">Video commissions</div></div>
+    <div class="stat"><div class="num">$22.6K</div><div class="lbl">LIVE sales, top 3 sellers<br>(Jul 13–19)</div></div>
+  </div>
+
+  <div class="section-title">🎬 Top Video Seller — $16,750 across 7 places <span class="bar"></span></div>
+  <div class="section-note">Sales from videos <b>posted during the campaign</b> (July 13+) · the top 3 are pulling away, but 4th–7th are wide open</div>
+  <div class="board">
+    <div class="row r1">
+      <div class="rank">👑</div>
+      <div class="who"><div class="handle">@strawbxrrymilkx</div><div class="subline">Nearly 3× the rest of the field combined</div><div class="meter"><i style="width:100%"></i></div></div>
+      <div class="money"><div class="gmv">$17,481</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">1st · $10,000</div>
+    </div>
+    <div class="row r2">
+      <div class="rank">2</div>
+      <div class="who"><div class="handle">@keepingupwithkaylie</div><div class="subline">One breakout video carrying her — build on it</div><div class="meter"><i style="width:38%"></i></div></div>
+      <div class="money"><div class="gmv">$6,575</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">2nd · $3,500</div>
+    </div>
+    <div class="row r3">
+      <div class="rank">3</div>
+      <div class="who"><div class="handle">@mandy_mae40</div><div class="subline">Teacher-collection content is converting 📓</div><div class="meter"><i style="width:18%"></i></div></div>
+      <div class="money"><div class="gmv">$3,132</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">3rd · $1,500</div>
+    </div>
+    <div class="row">
+      <div class="rank">4</div>
+      <div class="who"><div class="handle">@seasonaldiariess</div><div class="subline">The door is wide open — a couple grand takes the podium</div><div class="meter"><i style="width:5%"></i></div></div>
+      <div class="money"><div class="gmv">$946</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">4th · $750</div>
+    </div>
+    <div class="row">
+      <div class="rank">5</div>
+      <div class="who"><div class="handle">@meganshops</div><div class="subline">Collegiate universal buddy video landing 🏈</div><div class="meter"><i style="width:4%"></i></div></div>
+      <div class="money"><div class="gmv">$689</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">5th · $500</div>
+    </div>
+    <div class="row">
+      <div class="rank">6</div>
+      <div class="who"><div class="handle">@tayypalmer</div><div class="meter"><i style="width:3%"></i></div></div>
+      <div class="money"><div class="gmv">$465</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">6th · $300</div>
+    </div>
+    <div class="row">
+      <div class="rank">7</div>
+      <div class="who"><div class="handle">@countingthecoynes</div><div class="subline">7th place is held with ~$430 — catchable in a day 🔥</div><div class="meter"><i style="width:2%"></i></div></div>
+      <div class="money"><div class="gmv">$434</div><div class="gmvlbl">campaign video sales</div></div>
+      <div class="prize">7th · $200</div>
+    </div>
+  </div>
+
+  <div class="section-title">🔴 Top LIVE Seller — $8,000 across 3 places <span class="bar"></span></div>
+  <div class="section-note">Sales driven from LIVE streams · 4th place is knocking on the door</div>
+  <div class="board">
+    <div class="row r1">
+      <div class="rank">👑</div>
+      <div class="who"><div class="handle">@ashleygreen33</div><div class="subline">Owns LIVE — 2× the next seller</div><div class="meter"><i style="width:100%"></i></div></div>
+      <div class="money"><div class="gmv">$11,422</div><div class="gmvlbl">LIVE sales</div></div>
+      <div class="prize">1st · $5,000</div>
+    </div>
+    <div class="row r2">
+      <div class="rank">2</div>
+      <div class="who"><div class="handle">@sundaycanvasstudio</div><div class="subline">+81% this week — surging 🚀</div><div class="meter"><i style="width:51%"></i></div></div>
+      <div class="money"><div class="gmv">$5,817</div><div class="gmvlbl">LIVE sales</div></div>
+      <div class="prize">2nd · $2,000</div>
+    </div>
+    <div class="row r3">
+      <div class="rank">3</div>
+      <div class="who"><div class="handle">@jenniferlong76</div><div class="subline">Only $292 ahead of 4th — hold the line!</div><div class="meter"><i style="width:47%"></i></div></div>
+      <div class="money"><div class="gmv">$5,359</div><div class="gmvlbl">LIVE sales</div></div>
+      <div class="prize">3rd · $1,000</div>
+    </div>
+    <div class="row bubble">
+      <div class="rank">4</div>
+      <div class="who"><div class="handle">@hustlepapapaul</div><div class="subline">$292 from the money — one good LIVE flips it</div><div class="meter"><i style="width:44%"></i></div></div>
+      <div class="money"><div class="gmv">$5,067</div><div class="gmvlbl">LIVE sales</div></div>
+      <div class="prize none">SO close</div>
+    </div>
+  </div>
+
+  <div class="section-title">💰 Full Prize Ladder <span class="bar"></span></div>
+  <div class="twocol">
+    <div class="card">
+      <h3>Top Video Seller</h3>
+      <table class="ladder">
+        <tr><td>🥇 1st <span class="sub2">@strawbxrrymilkx</span></td><td class="amt">$10,000</td></tr>
+        <tr><td>🥈 2nd <span class="sub2">@keepingupwithkaylie</span></td><td class="amt">$3,500</td></tr>
+        <tr><td>🥉 3rd <span class="sub2">@mandy_mae40</span></td><td class="amt">$1,500</td></tr>
+        <tr><td>4th <span class="sub2">@seasonaldiariess</span></td><td class="amt">$750</td></tr>
+        <tr><td>5th <span class="sub2">@meganshops</span></td><td class="amt">$500</td></tr>
+        <tr><td>6th <span class="sub2">@tayypalmer</span></td><td class="amt">$300</td></tr>
+        <tr><td>7th <span class="sub2">@countingthecoynes</span></td><td class="amt">$200</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>Top LIVE Seller</h3>
+      <table class="ladder">
+        <tr><td>🥇 1st <span class="sub2">@ashleygreen33</span></td><td class="amt">$5,000</td></tr>
+        <tr><td>🥈 2nd <span class="sub2">@sundaycanvasstudio</span></td><td class="amt">$2,000</td></tr>
+        <tr><td>🥉 3rd <span class="sub2">@jenniferlong76</span></td><td class="amt">$1,000</td></tr>
+      </table>
+      <h3 style="margin-top:18px;">Bonus Prizes</h3>
+      <table class="ladder">
+        <tr><td>🎬 Most Videos — Top 3</td><td class="amt">$200 each</td></tr>
+        <tr><td>📦 Random Drop Boxes — 10 winners</td><td class="amt">Product box</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="big">🔥 You just got 2 more weeks — the race is wide open.</div>
+    <div class="small">4th through 7th on the video board are each held with under $1,000 in sales, and the drop boxes reward posting, not just winning.
+    With the extension, there's real time for your videos to scale and climb — one that catches can vault you into the money.<br>
+    <b>Keep posting on the Bottle Buddy &amp; Back to School listings. 24 days to go.</b></div>
+    <a class="discord" href="https://discord.gg/KcdakEXv6">Join the Discord for updates →</a>
+  </div>
+
+  <div class="foot">
+    <b>How this is scored:</b> Video standings count sales from videos <b>posted July 13–19</b> (older evergreen videos that are still selling are excluded), with sales counted through July 19. LIVE standings reflect LIVE-attributed sales July 13–19.<br>
+    Figures cover affiliate sales across all Frost Buddy products; the official "Bottle Buddy / Back to School listing only" requirement is confirmed per video in TikTok and via Frost Buddy's tracking. Unofficial and for motivation only — final winners per official challenge rules. 🧊 FROSTBUDDY × TIKTOK SHOP
+  </div>
+
+</div>
+</body>
+</html>

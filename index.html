@@ -75,6 +75,7 @@
     <div class="sub">CREATOR CHALLENGE LEADERBOARD &nbsp;·&nbsp; July 13 – Aug 14 &nbsp;·&nbsp; $25,000 PRIZE POOL</div>
     <div class="extbadge">🎉 JUST EXTENDED +2 WEEKS — now running through <b>August 14</b></div>
     <span class="updated">Standings through July 25 · <span class="countdown">19 days left to climb</span></span>
+    <div class="updated" style="margin-top:8px;font-size:12.5px">🕐 Last updated <b>Jul 26, 11:51 PM ET</b> · <span id="lastupd-ago"></span></div>
   </div>
 
   <div class="statgrid">
@@ -203,5 +204,17 @@
   </div>
 
 </div>
+
+<script>
+(function(){
+  var UPDATED = new Date('2026-07-26T23:51:00-04:00');
+  function render(){
+    var mins = Math.max(0, Math.floor((Date.now()-UPDATED.getTime())/60000));
+    var txt = mins<60 ? mins+' min ago' : (mins<2880 ? Math.round(mins/60)+' hours ago' : Math.round(mins/1440)+' days ago');
+    var el=document.getElementById('lastupd-ago'); if(el) el.textContent = txt;
+  }
+  render(); setInterval(render, 60000);
+})();
+</script>
 </body>
 </html>

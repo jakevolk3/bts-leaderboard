@@ -73,8 +73,8 @@
     <span class="pill">TikTok Shop Exclusive</span>
     <h1>BACK <span class="to">to</span> SCHOOL</h1>
     <div class="sub">CREATOR CHALLENGE LEADERBOARD &nbsp;·&nbsp; July 13 – Aug 14 &nbsp;·&nbsp; $25,000 PRIZE POOL</div>
-    <div class="extbadge">⏰ EXTENDED +2 WEEKS — now running through <b>August 14</b></div>
-    <span class="updated">Standings through August 4 · <span class="countdown">9 days left to climb</span></span>
+    <div class="extbadge">⏰ FINAL NIGHT — the challenge closes <b>tonight at midnight ET</b></div>
+    <span class="updated">Current standings · <span class="countdown" id="countdown">closing tonight at midnight ET</span></span>
     <div class="updated" style="margin-top:8px;font-size:12.5px">🕐 Last updated <b>Aug 5, 4:19 PM ET</b> · <span id="lastupd-ago"></span></div>
   </div>
 
@@ -197,11 +197,10 @@
   </div>
 
   <div class="callout">
-    <div class="big">🔥 9 days left — and two creators just crashed the money board.</div>
-    <div class="small">@thebaileydudley and @boymamavibez came from nowhere to take 7th and 8th, knocking last week's holders out.
-    Every paid spot below 3rd is held with under $1,800, and LIVE 4th has changed hands twice in a week.
-    One strong post or LIVE on the Bottle Buddy or Back to School listing can vault you into the money.<br>
-    <b>Keep posting on those two listings. 9 days to go.</b></div>
+    <div class="big">🔥 Last night to move — every paid spot is still winnable.</div>
+    <div class="small">Every paid spot below 3rd is held with under $1,800, and LIVE 4th has changed hands twice.
+    One strong post or LIVE on the Bottle Buddy or Back to School listing can still vault you into the money before the buzzer.<br>
+    <b>Post on those two listings tonight — scoring stops at midnight ET.</b></div>
     <a class="discord" href="https://discord.gg/KcdakEXv6">Join the Discord for updates →</a>
   </div>
 
@@ -214,13 +213,24 @@
 
 <script>
 (function(){
-  var UPDATED = new Date('2026-08-05T16:19:00-04:00');
+  var UPDATED  = new Date('2026-08-05T16:19:00-04:00');
+  var DEADLINE = new Date('2026-08-15T00:00:00-04:00');
   function render(){
     var mins = Math.max(0, Math.floor((Date.now()-UPDATED.getTime())/60000));
     var txt = mins<60 ? mins+' min ago' : (mins<2880 ? Math.round(mins/60)+' hours ago' : Math.round(mins/1440)+' days ago');
     var el=document.getElementById('lastupd-ago'); if(el) el.textContent = txt;
+    var cd = document.getElementById('countdown');
+    if(cd){
+      var left = DEADLINE.getTime() - Date.now();
+      if(left <= 0){
+        cd.textContent = 'SCORING CLOSED — final results coming';
+      } else {
+        var h = Math.floor(left/3600000), m = Math.floor((left%3600000)/60000);
+        cd.textContent = (h > 0 ? h+'h '+m+'m' : m+'m') + ' left to climb';
+      }
+    }
   }
-  render(); setInterval(render, 60000);
+  render(); setInterval(render, 30000);
 })();
 </script>
 </body>

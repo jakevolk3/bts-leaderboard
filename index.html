@@ -67,6 +67,10 @@
   .elig.ok{background:#e6f7ed;color:#137a43;}
   .elig.no{background:#fdecec;color:#c0392b;}
   .reqbar{margin:14px 0 0;padding:11px 14px;border-radius:12px;background:#fff6e5;border:1px solid #f0c987;color:#8a5a00;font-size:13px;font-weight:700;line-height:1.5;text-align:center;}
+  .boxgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px;margin-top:4px;}
+  .boxwin{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e6e9ee;border-radius:10px;padding:8px 11px;}
+  .boxnum{flex:0 0 21px;height:21px;border-radius:50%;background:#eef4fb;color:#2f7fc1;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  .boxname{font-size:13px;font-weight:700;color:#20303f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .foot{margin-top:26px;text-align:center;font-size:11.5px;color:var(--muted);line-height:1.6;}
 </style>
 </head>
@@ -79,7 +83,7 @@
     <div class="sub">CREATOR CHALLENGE LEADERBOARD &nbsp;·&nbsp; July 13 – Aug 14 &nbsp;·&nbsp; $25,000 PRIZE POOL</div>
     <div class="extbadge">⏰ EXTENDED +2 WEEKS — now running through <b>August 14</b></div>
     <span class="updated">FINAL RESULTS · <span class="countdown">CAMPAIGN CLOSED AUG 14</span></span>
-    <div class="updated" style="margin-top:8px;font-size:12.5px">🕐 Last updated <b>Aug 15, 12:19 PM ET</b> · <span id="lastupd-ago"></span></div>
+    <div class="updated" style="margin-top:8px;font-size:12.5px">🕐 Last updated <b>Aug 17, 11:28 AM ET</b> · <span id="lastupd-ago"></span></div>
   </div>
 
   <div class="statgrid">
@@ -190,10 +194,28 @@
       </table>
       <h3 style="margin-top:18px;">Bonus Prizes</h3>
       <table class="ladder">
-        <tr><td>🎬 Most Videos — Top 3</td><td class="amt">$200 each</td></tr>
-        <tr><td>📦 Random Drop Boxes — 10 winners</td><td class="amt">Product box</td></tr>
+        <tr><td>🎬 Most Videos <span class="sub2">@cassiesuniquepicks</span></td><td class="amt">$200</td></tr>
+        <tr><td>📦 Random Drop Boxes <span class="sub2">10 winners below</span></td><td class="amt">Product box</td></tr>
       </table>
     </div>
+  </div>
+
+  <div class="section-title">📦 Random Drop Box Winners <span class="bar"></span></div>
+  <div class="note">Drawn at random from creators who met the 30-video minimum and did not win another prize · 10 of 18 eligible</div>
+  <div class="card" style="margin-top:10px;">
+    <div class="boxgrid">
+      <div class="boxwin"><div class="boxnum">1</div><div class="boxname">@luvbug71</div></div>
+      <div class="boxwin"><div class="boxnum">2</div><div class="boxname">@thehannaco</div></div>
+      <div class="boxwin"><div class="boxnum">3</div><div class="boxname">@alaina__dawn</div></div>
+      <div class="boxwin"><div class="boxnum">4</div><div class="boxname">@zolos_favfinds</div></div>
+      <div class="boxwin"><div class="boxnum">5</div><div class="boxname">@katicosocials</div></div>
+      <div class="boxwin"><div class="boxnum">6</div><div class="boxname">@jennipher.with.a.ph</div></div>
+      <div class="boxwin"><div class="boxnum">7</div><div class="boxname">@nikki.homestead</div></div>
+      <div class="boxwin"><div class="boxnum">8</div><div class="boxname">@emmyhomelifestyle</div></div>
+      <div class="boxwin"><div class="boxnum">9</div><div class="boxname">@lauren.boymom</div></div>
+      <div class="boxwin"><div class="boxnum">10</div><div class="boxname">@munchiesandmanis</div></div>
+    </div>
+    <div class="note" style="margin-top:11px;">Winners will be contacted for shipping details. Draw method published for transparency.</div>
   </div>
 
   <div class="callout">
@@ -214,7 +236,7 @@
 
 <script>
 (function(){
-  var UPDATED = new Date('2026-08-15T12:19:00-04:00');
+  var UPDATED = new Date('2026-08-17T11:28:00-04:00');
   function render(){
     var mins = Math.max(0, Math.floor((Date.now()-UPDATED.getTime())/60000));
     var txt = mins<60 ? mins+' min ago' : (mins<2880 ? Math.round(mins/60)+' hours ago' : Math.round(mins/1440)+' days ago');

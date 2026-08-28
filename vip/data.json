@@ -1,0 +1,452 @@
+[
+ {
+  "handle": "ashleygreen33",
+  "name": "Ashley Green",
+  "jun": 37950.59,
+  "jul": 60783.76,
+  "aug": 38676.03,
+  "conv": 2.85,
+  "hours": 43.0
+ },
+ {
+  "handle": "hustlepapapaul",
+  "name": "Hustle Papa Paul",
+  "jun": 14855.63,
+  "jul": 18699.07,
+  "aug": 30946.68,
+  "conv": 0.28,
+  "hours": 145.3
+ },
+ {
+  "handle": "tiffany.the10amclub",
+  "name": "Tiffany \u2022 Life Over 40",
+  "jun": 14838.51,
+  "jul": 22431.94,
+  "aug": 29098.49,
+  "conv": 1.41,
+  "hours": 73.3
+ },
+ {
+  "handle": "jenniferlong76",
+  "name": "Jennifer Long",
+  "jun": 7286.84,
+  "jul": 21437.44,
+  "aug": 28231.96,
+  "conv": 1.72,
+  "hours": 80.5
+ },
+ {
+  "handle": "sundaycanvasstudio",
+  "name": "Sunday",
+  "jun": 11407.93,
+  "jul": 13669.74,
+  "aug": 23708.36,
+  "conv": 1.17,
+  "hours": 76.8
+ },
+ {
+  "handle": "jamsgems23",
+  "name": "Jam's Gems",
+  "jun": 7004.51,
+  "jul": 11340.51,
+  "aug": 16843.44,
+  "conv": 0.52,
+  "hours": 64.3
+ },
+ {
+  "handle": "lauren.boymom",
+  "name": "lauren-boymom",
+  "jun": 10104.83,
+  "jul": 17134.17,
+  "aug": 13642.21,
+  "conv": 1.29,
+  "hours": 42.6
+ },
+ {
+  "handle": "nikki.homestead",
+  "name": "Nikki H",
+  "jun": 1521.13,
+  "jul": 3407.62,
+  "aug": 12403.65,
+  "conv": 0.8,
+  "hours": 49.3
+ },
+ {
+  "handle": "yourfriend.reg",
+  "name": "Your Friend Regina",
+  "jun": 5322.54,
+  "jul": 5977.41,
+  "aug": 11517.89,
+  "conv": 1.18,
+  "hours": 59.8
+ },
+ {
+  "handle": "janessahamdan",
+  "name": "Janessa Shop My Finds",
+  "jun": 162.85,
+  "jul": 10134.27,
+  "aug": 10174.37,
+  "conv": 0.76,
+  "hours": 41.2
+ },
+ {
+  "handle": "montannagross",
+  "name": "Montanna Gross",
+  "jun": 3950.16,
+  "jul": 15956.28,
+  "aug": 9337.46,
+  "conv": 0.84,
+  "hours": 68.1
+ },
+ {
+  "handle": "markleblanc180",
+  "name": "Mark LeBlanc TTS",
+  "jun": 2923.13,
+  "jul": 5136.5,
+  "aug": 7696.35,
+  "conv": 2.11,
+  "hours": 28.1
+ },
+ {
+  "handle": "ashleyxyoung_",
+  "name": "ASHLEY",
+  "jun": 8224.94,
+  "jul": 6152.13,
+  "aug": 7112.8,
+  "conv": 0.84,
+  "hours": 47.1
+ },
+ {
+  "handle": "carrie_k",
+  "name": "carrie_k",
+  "jun": 7793.44,
+  "jul": 9392.79,
+  "aug": 6308.99,
+  "conv": 0.66,
+  "hours": 46.9
+ },
+ {
+  "handle": "marie.social.shop",
+  "name": "MARIE",
+  "jun": 0.0,
+  "jul": 0.0,
+  "aug": 6004.73,
+  "conv": 0.63,
+  "hours": 52.9
+ },
+ {
+  "handle": "dayna.kornau",
+  "name": "Dayna Kornau",
+  "jun": 5166.39,
+  "jul": 4938.59,
+  "aug": 3782.12,
+  "conv": 0.44,
+  "hours": 43.2
+ },
+ {
+  "handle": "tiktokshopwithlindsey",
+  "name": "Lindsey | Sips+More",
+  "jun": 0.0,
+  "jul": 1105.34,
+  "aug": 3599.55,
+  "conv": 0.56,
+  "hours": 31.3
+ },
+ {
+  "handle": "davidlittle5",
+  "name": "David L. Frost",
+  "jun": 3547.76,
+  "jul": 4022.38,
+  "aug": 2809.98,
+  "conv": 0.44,
+  "hours": 48.4
+ },
+ {
+  "handle": "thebaileydudley",
+  "name": "Bailey Dudley",
+  "jun": 10817.08,
+  "jul": 5514.42,
+  "aug": 1919.17,
+  "conv": 0.49,
+  "hours": 7.4
+ },
+ {
+  "handle": "mariashomestead",
+  "name": "Maria",
+  "jun": 1026.09,
+  "jul": 1012.17,
+  "aug": 1817.91,
+  "conv": 0.22,
+  "hours": 43.8
+ },
+ {
+  "handle": "psujem00",
+  "name": "Jaime Cy",
+  "jun": 1740.58,
+  "jul": 2294.72,
+  "aug": 1374.52,
+  "conv": 0.48,
+  "hours": 28.5
+ },
+ {
+  "handle": "jillzjourney",
+  "name": "Jill",
+  "jun": 26.2,
+  "jul": 59.12,
+  "aug": 1071.42,
+  "conv": 0.25,
+  "hours": 18.4
+ },
+ {
+  "handle": "luvbug71",
+  "name": "LisaXX",
+  "jun": 360.52,
+  "jul": 178.72,
+  "aug": 955.92,
+  "conv": 0.12,
+  "hours": 38.4
+ },
+ {
+  "handle": "studmuffin82",
+  "name": "CEO of MUFFINS",
+  "jun": 512.1,
+  "jul": 329.26,
+  "aug": 897.24,
+  "conv": 0.03,
+  "hours": 59.9
+ },
+ {
+  "handle": ".tessers",
+  "name": "Tess",
+  "jun": 0.0,
+  "jul": 0.0,
+  "aug": 775.85,
+  "conv": 0.29,
+  "hours": 32.5
+ },
+ {
+  "handle": ".mamacitaaa_",
+  "name": "mamacitaaa",
+  "jun": 356.53,
+  "jul": 524.3,
+  "aug": 664.07,
+  "conv": 0.08,
+  "hours": 32.4
+ },
+ {
+  "handle": "mandy_mae40",
+  "name": "Mandy I Budget Minded SAHM",
+  "jun": 5252.41,
+  "jul": 1472.46,
+  "aug": 617.77,
+  "conv": 0.17,
+  "hours": 21.4
+ },
+ {
+  "handle": "southerntiktokmama",
+  "name": "southerntiktokmama",
+  "jun": 132.69,
+  "jul": 67.96,
+  "aug": 512.92,
+  "conv": 1.17,
+  "hours": 1.5
+ },
+ {
+  "handle": "ru_and_her_two",
+  "name": "Ruthie",
+  "jun": 0.0,
+  "jul": 0.0,
+  "aug": 352.21,
+  "conv": 0.3,
+  "hours": 4.8
+ },
+ {
+  "handle": "jennofalltrades77",
+  "name": "Jenn",
+  "jun": 0.0,
+  "jul": 222.7,
+  "aug": 322.22,
+  "conv": 0.03,
+  "hours": 50.9
+ },
+ {
+  "handle": "oakleyandwillowsmom",
+  "name": "Oakley and Willows Mom",
+  "jun": 278.05,
+  "jul": 194.27,
+  "aug": 309.26,
+  "conv": 0.03,
+  "hours": 50.1
+ },
+ {
+  "handle": "highonlaurenelise",
+  "name": "Lauren Elise",
+  "jun": 132.66,
+  "jul": 418.2,
+  "aug": 269.64,
+  "conv": 0.08,
+  "hours": 16.3
+ },
+ {
+  "handle": "macostac36",
+  "name": "Mayra",
+  "jun": 0.0,
+  "jul": 0.0,
+  "aug": 264.94,
+  "conv": 0.17,
+  "hours": 29.4
+ },
+ {
+  "handle": "tiffanysrootedessentials",
+  "name": "Tiffanys RootedEssentials",
+  "jun": 620.16,
+  "jul": 0.0,
+  "aug": 259.91,
+  "conv": 0.13,
+  "hours": 12.4
+ },
+ {
+  "handle": "kaitlyn_447",
+  "name": "kaitlyn_447",
+  "jun": 34.13,
+  "jul": 311.92,
+  "aug": 257.01,
+  "conv": 0.49,
+  "hours": 1.1
+ },
+ {
+  "handle": "brandysfinds",
+  "name": "Brandy",
+  "jun": 3291.73,
+  "jul": 2035.74,
+  "aug": 243.89,
+  "conv": 0.63,
+  "hours": 4.2
+ },
+ {
+  "handle": "itssodakbenny",
+  "name": "ItsSoDakBenny",
+  "jun": 0.0,
+  "jul": 879.94,
+  "aug": 213.49,
+  "conv": 0.04,
+  "hours": 19.7
+ },
+ {
+  "handle": "cupofjo10",
+  "name": "CupOfJo",
+  "jun": 0.0,
+  "jul": 249.86,
+  "aug": 145.1,
+  "conv": 0.0,
+  "hours": 0.0
+ },
+ {
+  "handle": "fabdboutique",
+  "name": "FabD Boutique",
+  "jun": 120.55,
+  "jul": 196.32,
+  "aug": 130.16,
+  "conv": 0.09,
+  "hours": 4.8
+ },
+ {
+  "handle": "pokedhd",
+  "name": "Pok\u00e9DHD",
+  "jun": 216.46,
+  "jul": 160.16,
+  "aug": 108.81,
+  "conv": 0.02,
+  "hours": 60.4
+ },
+ {
+  "handle": "trissiebaby",
+  "name": "Trissie & the chaos crew",
+  "jun": 0.0,
+  "jul": 484.59,
+  "aug": 64.75,
+  "conv": 0.01,
+  "hours": 28.4
+ },
+ {
+  "handle": "curatedbykennady",
+  "name": "Jill Fav Finds",
+  "jun": 0.0,
+  "jul": 428.55,
+  "aug": 29.99,
+  "conv": 0.18,
+  "hours": 1.0
+ },
+ {
+  "handle": "alexyszarra",
+  "name": "Alexys Zarra",
+  "jun": 248.98,
+  "jul": 3081.16,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 0.0
+ },
+ {
+  "handle": "glowgetter2.0",
+  "name": "JoyfulJourney",
+  "jun": 7566.75,
+  "jul": 2449.31,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 0.0
+ },
+ {
+  "handle": "justanothernurse1",
+  "name": "Justanothernurse",
+  "jun": 605.8,
+  "jul": 602.18,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 0.0
+ },
+ {
+  "handle": "honestwitherin",
+  "name": "Erin",
+  "jun": 2266.0,
+  "jul": 598.97,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 0.0
+ },
+ {
+  "handle": "loved_by_jen",
+  "name": "Loved By Jen",
+  "jun": 0.0,
+  "jul": 446.11,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 5.4
+ },
+ {
+  "handle": "shop.with.kristina",
+  "name": "Kristina",
+  "jun": 347.86,
+  "jul": 344.92,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 0.2
+ },
+ {
+  "handle": "wrench.warrior",
+  "name": "Wrench Warriors",
+  "jun": 36.83,
+  "jul": 276.49,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 0.0
+ },
+ {
+  "handle": "i.am.montel",
+  "name": "Montel",
+  "jun": 715.14,
+  "jul": 272.24,
+  "aug": 0.0,
+  "conv": 0.0,
+  "hours": 1.2
+ }
+]

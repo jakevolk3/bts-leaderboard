@@ -2,6 +2,7 @@ import json, html, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PERIOD = "August 2026"
+GOLD, SILVER = 30000, 5000
 
 rows = json.load(open(os.path.join(HERE, 'data.json')))
 rows.sort(key=lambda r: -r['aug'])
@@ -9,12 +10,21 @@ rows.sort(key=lambda r: -r['aug'])
 m = lambda v: f"${v:,.0f}"
 e = lambda s: html.escape(str(s))
 
+def tier(v):
+    if v >= GOLD:
+        return 'gold', 'Gold'
+    if v >= SILVER:
+        return 'silver', 'Silver'
+    return '', ''
+
 def line(r, i):
     rank = i + 1
-    cls = f' r{rank}' if rank <= 3 else ''
-    return (f'<div class="row{cls}">'
+    tcls, tname = tier(r['aug'])
+    badge = f'<span class="badge {tcls}">{tname}</span>' if tname else ''
+    return (f'<div class="row {tcls}">'
             f'<div class="rank">{rank}</div>'
             f'<div class="who">{e(r["name"])}<span class="at">@{e(r["handle"])}</span></div>'
+            f'{badge}'
             f'<div class="gmv">{m(r["aug"])}</div>'
             f'</div>')
 
@@ -38,10 +48,14 @@ CSS = """
        overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .at{color:var(--muted);font-weight:600;font-size:12.5px;margin-left:7px;}
   .gmv{font-weight:900;font-size:16px;flex-shrink:0;font-variant-numeric:tabular-nums;}
-  .r1,.r2,.r3{background:linear-gradient(90deg,#fffaf992,transparent);}
-  .r1 .rank,.r2 .rank,.r3 .rank{color:var(--gold);font-size:19px;}
-  .r1 .who,.r2 .who,.r3 .who{font-size:16px;font-weight:800;}
-  .r1 .gmv,.r2 .gmv,.r3 .gmv{color:var(--gold);font-size:17px;}
+  .badge{font-size:9.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;
+         padding:3px 9px;border-radius:20px;flex-shrink:0;}
+  .badge.gold{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#4d3800;}
+  .badge.silver{background:linear-gradient(135deg,#dfe5ec,#a9b4c0);color:#2f3740;}
+  .row.gold{background:linear-gradient(90deg,#fff8e8,transparent);}
+  .row.gold .rank,.row.gold .gmv{color:var(--gold);}
+  .row.gold .who{font-weight:800;}
+  .row.silver{background:linear-gradient(90deg,#f7f9fb,transparent);}
   .note{text-align:center;font-size:11.5px;color:var(--muted);margin-top:16px;line-height:1.6;}
   @media(max-width:420px){
     .at{display:block;margin:1px 0 0;}
@@ -64,7 +78,8 @@ doc = f"""<!DOCTYPE html>
   <div class="board">
 {chr(10).join('    ' + line(r, i) for i, r in enumerate(rows))}
   </div>
-  <p class="note">Live GMV only, net of returns. Updated {PERIOD}.</p>
+  <p class="note">Gold {m(GOLD)}+ &middot; Silver {m(SILVER)}+ &middot; live GMV, net of returns.<br>
+     Clearing a line makes you eligible for review &mdash; spots are limited.</p>
 </div>
 </body>
 </html>

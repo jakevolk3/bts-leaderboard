@@ -3,100 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0e17">
 <title>Frost Buddy VIP Live — Scoreboard</title>
 <style>
-  :root{--blue:#4da3e0;--gold:#c8901b;--gold-lt:#ffd76e;--ink:#1e2430;--paper:#fff8f0;--muted:#7a8494;}
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&display=swap');
+  :root{
+    --bg:#0a0e17; --card:#131a28; --line:#1f2a3d;
+    --txt:#eef3fa; --dim:#7d8ba3;
+    --blue:#4da3e0; --gold:#f5c451; --gold-d:#c8901b; --silver:#c3ccd8;
+  }
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
-       background:linear-gradient(180deg,#fff 0%,var(--paper) 60%,#f6e9d6 100%);
-       color:var(--ink);min-height:100vh;}
-  .wrap{max-width:620px;margin:0 auto;padding:38px 18px 56px;}
-  h1{text-align:center;font-size:clamp(30px,7vw,46px);font-weight:900;color:var(--blue);
-     text-shadow:2px 2px 0 #d9e8f5;letter-spacing:-.01em;line-height:1.05;}
-  h1 span{color:var(--gold);text-shadow:2px 2px 0 #f7e8c4;}
-  .when{text-align:center;font-size:13px;font-weight:700;color:var(--muted);
-        text-transform:uppercase;letter-spacing:.1em;margin:9px 0 24px;}
-  .board{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 22px rgba(30,36,48,.11);}
-  .row{display:flex;align-items:center;gap:14px;padding:13px 18px;border-bottom:1px solid #f2f0ec;}
-  .row:last-child{border-bottom:none;}
-  .rank{width:30px;font-weight:900;font-size:15px;color:var(--muted);flex-shrink:0;text-align:center;}
-  .who{flex:1;min-width:0;font-weight:700;font-size:15px;
-       overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-  .at{color:var(--muted);font-weight:600;font-size:12.5px;margin-left:7px;}
-  .gmv{font-weight:900;font-size:16px;flex-shrink:0;font-variant-numeric:tabular-nums;}
-  .badge{font-size:9.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;
-         padding:3px 9px;border-radius:20px;flex-shrink:0;}
-  .badge.gold{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#4d3800;}
-  .badge.silver{background:linear-gradient(135deg,#dfe5ec,#a9b4c0);color:#2f3740;}
-  .row.gold{background:linear-gradient(90deg,#fff8e8,transparent);}
+  body{
+    font-family:'Archivo','Segoe UI',system-ui,-apple-system,sans-serif;
+    background:var(--bg);color:var(--txt);min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  body:before{
+    content:'';position:fixed;inset:0;pointer-events:none;
+    background:
+      radial-gradient(60vw 40vh at 15% -5%, rgba(77,163,224,.20), transparent 65%),
+      radial-gradient(55vw 38vh at 88% 6%, rgba(245,196,81,.14), transparent 62%),
+      radial-gradient(70vw 45vh at 50% 105%, rgba(232,80,58,.10), transparent 70%);
+  }
+  .wrap{position:relative;max-width:660px;margin:0 auto;padding:46px 16px 64px;}
+
+  header{text-align:center;margin-bottom:26px;}
+  .live{
+    display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--dim);
+    border:1px solid var(--line);border-radius:100px;padding:5px 14px;margin-bottom:16px;
+  }
+  .dot{width:6px;height:6px;border-radius:50%;background:#2fae6b;
+       box-shadow:0 0 0 0 rgba(47,174,107,.7);animation:pulse 2.2s infinite;}
+  @keyframes pulse{70%{box-shadow:0 0 0 7px rgba(47,174,107,0);}100%{box-shadow:0 0 0 0 rgba(47,174,107,0);}}
+  h1{
+    font-size:clamp(38px,9.5vw,68px);font-weight:900;line-height:.92;
+    letter-spacing:-.035em;text-transform:uppercase;
+  }
+  h1 .a{background:linear-gradient(180deg,#8fd0ff,#3d8fd0);-webkit-background-clip:text;
+        background-clip:text;color:transparent;}
+  h1 .b{background:linear-gradient(180deg,#ffe9a8,#d99a20);-webkit-background-clip:text;
+        background-clip:text;color:transparent;}
+  .when{margin-top:11px;font-size:11.5px;font-weight:700;letter-spacing:.2em;
+        text-transform:uppercase;color:var(--dim);}
+
+  ol{list-style:none;display:flex;flex-direction:column;gap:7px;}
+  .row{
+    display:flex;align-items:center;gap:13px;
+    background:linear-gradient(100deg,var(--card),#111826);
+    border:1px solid var(--line);border-radius:13px;padding:13px 16px;
+    animation:in .5s both;animation-delay:calc(var(--i)*22ms);
+  }
+  @keyframes in{from{opacity:0;transform:translateY(9px);}to{opacity:1;transform:none;}}
+  @media(prefers-reduced-motion:reduce){.row{animation:none;}.dot{animation:none;}}
+
+  .rank{
+    width:30px;flex-shrink:0;text-align:center;
+    font-size:16px;font-weight:800;color:var(--dim);font-variant-numeric:tabular-nums;
+  }
+  .who{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;}
+  .who b{font-size:15px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .who i{font-style:normal;font-size:11.5px;font-weight:600;color:var(--dim);
+         overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .gmv{font-size:17px;font-weight:800;flex-shrink:0;font-variant-numeric:tabular-nums;
+       letter-spacing:-.02em;}
+  .badge{
+    font-size:9px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;
+    padding:4px 10px;border-radius:100px;flex-shrink:0;
+  }
+
+  /* Gold */
+  .row.gold{
+    border-color:rgba(245,196,81,.38);
+    background:linear-gradient(100deg,rgba(245,196,81,.13),rgba(245,196,81,.02) 42%,var(--card));
+    box-shadow:0 0 26px -8px rgba(245,196,81,.35);
+  }
   .row.gold .rank,.row.gold .gmv{color:var(--gold);}
-  .row.gold .who{font-weight:800;}
-  .row.silver{background:linear-gradient(90deg,#f7f9fb,transparent);}
-  .note{text-align:center;font-size:11.5px;color:var(--muted);margin-top:16px;line-height:1.6;}
-  @media(max-width:420px){
-    .at{display:block;margin:1px 0 0;}
-    .row{padding:11px 14px;gap:10px;}
+  .row.gold .who b{font-size:16.5px;font-weight:900;}
+  .row.gold .badge{
+    background:linear-gradient(135deg,#ffe9a8,var(--gold),#b8830f);color:#3a2900;
+    box-shadow:0 1px 8px rgba(245,196,81,.4);
+  }
+  /* Silver */
+  .row.silver{border-color:rgba(195,204,216,.20);}
+  .row.silver .badge{background:linear-gradient(135deg,#eef2f7,#aab5c4);color:#1b2331;}
+  .row.silver .gmv{color:#dbe4ef;}
+
+  .note{
+    margin-top:24px;text-align:center;font-size:11.5px;line-height:1.75;
+    color:var(--dim);font-weight:600;
+  }
+  .note b{color:var(--gold);font-weight:800;}
+  .note s{color:var(--silver);text-decoration:none;font-weight:800;}
+
+  @media(max-width:430px){
+    .wrap{padding:34px 11px 48px;}
+    .row{padding:11px 12px;gap:9px;border-radius:11px;}
+    .rank{width:21px;font-size:14px;}
+    .who b{font-size:13.5px;} .who i{font-size:10.5px;}
+    .gmv{font-size:15px;}
+    .badge{font-size:8px;padding:3px 7px;letter-spacing:.07em;}
+    .row.gold .who b{font-size:14.5px;}
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>VIP LIVE <span>SCOREBOARD</span></h1>
-  <div class="when">August 2026 &middot; Live GMV</div>
-  <div class="board">
-    <div class="row gold"><div class="rank">1</div><div class="who">Ashley Green<span class="at">@ashleygreen33</span></div><span class="badge gold">Gold</span><div class="gmv">$38,676</div></div>
-    <div class="row gold"><div class="rank">2</div><div class="who">Hustle Papa Paul<span class="at">@hustlepapapaul</span></div><span class="badge gold">Gold</span><div class="gmv">$30,947</div></div>
-    <div class="row silver"><div class="rank">3</div><div class="who">Tiffany • Life Over 40<span class="at">@tiffany.the10amclub</span></div><span class="badge silver">Silver</span><div class="gmv">$29,098</div></div>
-    <div class="row silver"><div class="rank">4</div><div class="who">Jennifer Long<span class="at">@jenniferlong76</span></div><span class="badge silver">Silver</span><div class="gmv">$28,232</div></div>
-    <div class="row silver"><div class="rank">5</div><div class="who">Sunday<span class="at">@sundaycanvasstudio</span></div><span class="badge silver">Silver</span><div class="gmv">$23,708</div></div>
-    <div class="row silver"><div class="rank">6</div><div class="who">Jam&#x27;s Gems<span class="at">@jamsgems23</span></div><span class="badge silver">Silver</span><div class="gmv">$16,843</div></div>
-    <div class="row silver"><div class="rank">7</div><div class="who">lauren-boymom<span class="at">@lauren.boymom</span></div><span class="badge silver">Silver</span><div class="gmv">$13,642</div></div>
-    <div class="row silver"><div class="rank">8</div><div class="who">Nikki H<span class="at">@nikki.homestead</span></div><span class="badge silver">Silver</span><div class="gmv">$12,404</div></div>
-    <div class="row silver"><div class="rank">9</div><div class="who">Your Friend Regina<span class="at">@yourfriend.reg</span></div><span class="badge silver">Silver</span><div class="gmv">$11,518</div></div>
-    <div class="row silver"><div class="rank">10</div><div class="who">Janessa Shop My Finds<span class="at">@janessahamdan</span></div><span class="badge silver">Silver</span><div class="gmv">$10,174</div></div>
-    <div class="row silver"><div class="rank">11</div><div class="who">Montanna Gross<span class="at">@montannagross</span></div><span class="badge silver">Silver</span><div class="gmv">$9,337</div></div>
-    <div class="row silver"><div class="rank">12</div><div class="who">Mark LeBlanc TTS<span class="at">@markleblanc180</span></div><span class="badge silver">Silver</span><div class="gmv">$7,696</div></div>
-    <div class="row silver"><div class="rank">13</div><div class="who">ASHLEY<span class="at">@ashleyxyoung_</span></div><span class="badge silver">Silver</span><div class="gmv">$7,113</div></div>
-    <div class="row silver"><div class="rank">14</div><div class="who">carrie_k<span class="at">@carrie_k</span></div><span class="badge silver">Silver</span><div class="gmv">$6,309</div></div>
-    <div class="row silver"><div class="rank">15</div><div class="who">MARIE<span class="at">@marie.social.shop</span></div><span class="badge silver">Silver</span><div class="gmv">$6,005</div></div>
-    <div class="row "><div class="rank">16</div><div class="who">Dayna Kornau<span class="at">@dayna.kornau</span></div><div class="gmv">$3,782</div></div>
-    <div class="row "><div class="rank">17</div><div class="who">Lindsey | Sips+More<span class="at">@tiktokshopwithlindsey</span></div><div class="gmv">$3,600</div></div>
-    <div class="row "><div class="rank">18</div><div class="who">David L. Frost<span class="at">@davidlittle5</span></div><div class="gmv">$2,810</div></div>
-    <div class="row "><div class="rank">19</div><div class="who">Bailey Dudley<span class="at">@thebaileydudley</span></div><div class="gmv">$1,919</div></div>
-    <div class="row "><div class="rank">20</div><div class="who">Maria<span class="at">@mariashomestead</span></div><div class="gmv">$1,818</div></div>
-    <div class="row "><div class="rank">21</div><div class="who">Jaime Cy<span class="at">@psujem00</span></div><div class="gmv">$1,375</div></div>
-    <div class="row "><div class="rank">22</div><div class="who">Jill<span class="at">@jillzjourney</span></div><div class="gmv">$1,071</div></div>
-    <div class="row "><div class="rank">23</div><div class="who">LisaXX<span class="at">@luvbug71</span></div><div class="gmv">$956</div></div>
-    <div class="row "><div class="rank">24</div><div class="who">CEO of MUFFINS<span class="at">@studmuffin82</span></div><div class="gmv">$897</div></div>
-    <div class="row "><div class="rank">25</div><div class="who">Tess<span class="at">@.tessers</span></div><div class="gmv">$776</div></div>
-    <div class="row "><div class="rank">26</div><div class="who">mamacitaaa<span class="at">@.mamacitaaa_</span></div><div class="gmv">$664</div></div>
-    <div class="row "><div class="rank">27</div><div class="who">Mandy I Budget Minded SAHM<span class="at">@mandy_mae40</span></div><div class="gmv">$618</div></div>
-    <div class="row "><div class="rank">28</div><div class="who">southerntiktokmama<span class="at">@southerntiktokmama</span></div><div class="gmv">$513</div></div>
-    <div class="row "><div class="rank">29</div><div class="who">Ruthie<span class="at">@ru_and_her_two</span></div><div class="gmv">$352</div></div>
-    <div class="row "><div class="rank">30</div><div class="who">Jenn<span class="at">@jennofalltrades77</span></div><div class="gmv">$322</div></div>
-    <div class="row "><div class="rank">31</div><div class="who">Oakley and Willows Mom<span class="at">@oakleyandwillowsmom</span></div><div class="gmv">$309</div></div>
-    <div class="row "><div class="rank">32</div><div class="who">Lauren Elise<span class="at">@highonlaurenelise</span></div><div class="gmv">$270</div></div>
-    <div class="row "><div class="rank">33</div><div class="who">Mayra<span class="at">@macostac36</span></div><div class="gmv">$265</div></div>
-    <div class="row "><div class="rank">34</div><div class="who">Tiffanys RootedEssentials<span class="at">@tiffanysrootedessentials</span></div><div class="gmv">$260</div></div>
-    <div class="row "><div class="rank">35</div><div class="who">kaitlyn_447<span class="at">@kaitlyn_447</span></div><div class="gmv">$257</div></div>
-    <div class="row "><div class="rank">36</div><div class="who">Brandy<span class="at">@brandysfinds</span></div><div class="gmv">$244</div></div>
-    <div class="row "><div class="rank">37</div><div class="who">ItsSoDakBenny<span class="at">@itssodakbenny</span></div><div class="gmv">$213</div></div>
-    <div class="row "><div class="rank">38</div><div class="who">CupOfJo<span class="at">@cupofjo10</span></div><div class="gmv">$145</div></div>
-    <div class="row "><div class="rank">39</div><div class="who">FabD Boutique<span class="at">@fabdboutique</span></div><div class="gmv">$130</div></div>
-    <div class="row "><div class="rank">40</div><div class="who">PokéDHD<span class="at">@pokedhd</span></div><div class="gmv">$109</div></div>
-    <div class="row "><div class="rank">41</div><div class="who">Trissie &amp; the chaos crew<span class="at">@trissiebaby</span></div><div class="gmv">$65</div></div>
-    <div class="row "><div class="rank">42</div><div class="who">Jill Fav Finds<span class="at">@curatedbykennady</span></div><div class="gmv">$30</div></div>
-    <div class="row "><div class="rank">43</div><div class="who">Alexys Zarra<span class="at">@alexyszarra</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">44</div><div class="who">JoyfulJourney<span class="at">@glowgetter2.0</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">45</div><div class="who">Justanothernurse<span class="at">@justanothernurse1</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">46</div><div class="who">Erin<span class="at">@honestwitherin</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">47</div><div class="who">Loved By Jen<span class="at">@loved_by_jen</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">48</div><div class="who">Kristina<span class="at">@shop.with.kristina</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">49</div><div class="who">Wrench Warriors<span class="at">@wrench.warrior</span></div><div class="gmv">$0</div></div>
-    <div class="row "><div class="rank">50</div><div class="who">Montel<span class="at">@i.am.montel</span></div><div class="gmv">$0</div></div>
-  </div>
-  <p class="note">Gold $30,000+ &middot; Silver $5,000+ &middot; live GMV, net of returns.<br>
-     Clearing a line makes you eligible for review &mdash; spots are limited.</p>
+  <header>
+    <div class="live"><span class="dot"></span>Frost Buddy VIP Live</div>
+    <h1><span class="a">VIP LIVE</span><br><span class="b">SCOREBOARD</span></h1>
+    <div class="when">August 2026 &middot; Live GMV</div>
+  </header>
+  <ol>
+    <li class="row gold" style="--i:0"><span class="rank">1</span><span class="who"><b>Ashley Green</b><i>@ashleygreen33</i></span><span class="badge">Gold</span><span class="gmv">$38,676</span></li>
+    <li class="row gold" style="--i:1"><span class="rank">2</span><span class="who"><b>Hustle Papa Paul</b><i>@hustlepapapaul</i></span><span class="badge">Gold</span><span class="gmv">$30,947</span></li>
+    <li class="row silver" style="--i:2"><span class="rank">3</span><span class="who"><b>Tiffany • Life Over 40</b><i>@tiffany.the10amclub</i></span><span class="badge">Silver</span><span class="gmv">$29,098</span></li>
+    <li class="row silver" style="--i:3"><span class="rank">4</span><span class="who"><b>Jennifer Long</b><i>@jenniferlong76</i></span><span class="badge">Silver</span><span class="gmv">$28,232</span></li>
+    <li class="row silver" style="--i:4"><span class="rank">5</span><span class="who"><b>Sunday</b><i>@sundaycanvasstudio</i></span><span class="badge">Silver</span><span class="gmv">$23,708</span></li>
+    <li class="row silver" style="--i:5"><span class="rank">6</span><span class="who"><b>Jam&#x27;s Gems</b><i>@jamsgems23</i></span><span class="badge">Silver</span><span class="gmv">$16,843</span></li>
+    <li class="row silver" style="--i:6"><span class="rank">7</span><span class="who"><b>lauren-boymom</b><i>@lauren.boymom</i></span><span class="badge">Silver</span><span class="gmv">$13,642</span></li>
+    <li class="row silver" style="--i:7"><span class="rank">8</span><span class="who"><b>Nikki H</b><i>@nikki.homestead</i></span><span class="badge">Silver</span><span class="gmv">$12,404</span></li>
+    <li class="row silver" style="--i:8"><span class="rank">9</span><span class="who"><b>Your Friend Regina</b><i>@yourfriend.reg</i></span><span class="badge">Silver</span><span class="gmv">$11,518</span></li>
+    <li class="row silver" style="--i:9"><span class="rank">10</span><span class="who"><b>Janessa Shop My Finds</b><i>@janessahamdan</i></span><span class="badge">Silver</span><span class="gmv">$10,174</span></li>
+    <li class="row silver" style="--i:10"><span class="rank">11</span><span class="who"><b>Montanna Gross</b><i>@montannagross</i></span><span class="badge">Silver</span><span class="gmv">$9,337</span></li>
+    <li class="row silver" style="--i:11"><span class="rank">12</span><span class="who"><b>Mark LeBlanc TTS</b><i>@markleblanc180</i></span><span class="badge">Silver</span><span class="gmv">$7,696</span></li>
+    <li class="row silver" style="--i:12"><span class="rank">13</span><span class="who"><b>ASHLEY</b><i>@ashleyxyoung_</i></span><span class="badge">Silver</span><span class="gmv">$7,113</span></li>
+    <li class="row silver" style="--i:13"><span class="rank">14</span><span class="who"><b>carrie_k</b><i>@carrie_k</i></span><span class="badge">Silver</span><span class="gmv">$6,309</span></li>
+    <li class="row silver" style="--i:14"><span class="rank">15</span><span class="who"><b>MARIE</b><i>@marie.social.shop</i></span><span class="badge">Silver</span><span class="gmv">$6,005</span></li>
+    <li class="row " style="--i:15"><span class="rank">16</span><span class="who"><b>Dayna Kornau</b><i>@dayna.kornau</i></span><span class="gmv">$3,782</span></li>
+    <li class="row " style="--i:16"><span class="rank">17</span><span class="who"><b>Lindsey | Sips+More</b><i>@tiktokshopwithlindsey</i></span><span class="gmv">$3,600</span></li>
+    <li class="row " style="--i:17"><span class="rank">18</span><span class="who"><b>David L. Frost</b><i>@davidlittle5</i></span><span class="gmv">$2,810</span></li>
+    <li class="row " style="--i:18"><span class="rank">19</span><span class="who"><b>Bailey Dudley</b><i>@thebaileydudley</i></span><span class="gmv">$1,919</span></li>
+    <li class="row " style="--i:19"><span class="rank">20</span><span class="who"><b>Maria</b><i>@mariashomestead</i></span><span class="gmv">$1,818</span></li>
+    <li class="row " style="--i:20"><span class="rank">21</span><span class="who"><b>Jaime Cy</b><i>@psujem00</i></span><span class="gmv">$1,375</span></li>
+    <li class="row " style="--i:21"><span class="rank">22</span><span class="who"><b>Jill</b><i>@jillzjourney</i></span><span class="gmv">$1,071</span></li>
+    <li class="row " style="--i:22"><span class="rank">23</span><span class="who"><b>LisaXX</b><i>@luvbug71</i></span><span class="gmv">$956</span></li>
+    <li class="row " style="--i:23"><span class="rank">24</span><span class="who"><b>CEO of MUFFINS</b><i>@studmuffin82</i></span><span class="gmv">$897</span></li>
+    <li class="row " style="--i:24"><span class="rank">25</span><span class="who"><b>Tess</b><i>@.tessers</i></span><span class="gmv">$776</span></li>
+    <li class="row " style="--i:25"><span class="rank">26</span><span class="who"><b>mamacitaaa</b><i>@.mamacitaaa_</i></span><span class="gmv">$664</span></li>
+    <li class="row " style="--i:26"><span class="rank">27</span><span class="who"><b>Mandy I Budget Minded SAHM</b><i>@mandy_mae40</i></span><span class="gmv">$618</span></li>
+    <li class="row " style="--i:27"><span class="rank">28</span><span class="who"><b>southerntiktokmama</b><i>@southerntiktokmama</i></span><span class="gmv">$513</span></li>
+    <li class="row " style="--i:28"><span class="rank">29</span><span class="who"><b>Ruthie</b><i>@ru_and_her_two</i></span><span class="gmv">$352</span></li>
+    <li class="row " style="--i:29"><span class="rank">30</span><span class="who"><b>Jenn</b><i>@jennofalltrades77</i></span><span class="gmv">$322</span></li>
+    <li class="row " style="--i:30"><span class="rank">31</span><span class="who"><b>Oakley and Willows Mom</b><i>@oakleyandwillowsmom</i></span><span class="gmv">$309</span></li>
+    <li class="row " style="--i:31"><span class="rank">32</span><span class="who"><b>Lauren Elise</b><i>@highonlaurenelise</i></span><span class="gmv">$270</span></li>
+    <li class="row " style="--i:32"><span class="rank">33</span><span class="who"><b>Mayra</b><i>@macostac36</i></span><span class="gmv">$265</span></li>
+    <li class="row " style="--i:33"><span class="rank">34</span><span class="who"><b>Tiffanys RootedEssentials</b><i>@tiffanysrootedessentials</i></span><span class="gmv">$260</span></li>
+    <li class="row " style="--i:34"><span class="rank">35</span><span class="who"><b>kaitlyn_447</b><i>@kaitlyn_447</i></span><span class="gmv">$257</span></li>
+    <li class="row " style="--i:35"><span class="rank">36</span><span class="who"><b>Brandy</b><i>@brandysfinds</i></span><span class="gmv">$244</span></li>
+    <li class="row " style="--i:36"><span class="rank">37</span><span class="who"><b>ItsSoDakBenny</b><i>@itssodakbenny</i></span><span class="gmv">$213</span></li>
+    <li class="row " style="--i:37"><span class="rank">38</span><span class="who"><b>CupOfJo</b><i>@cupofjo10</i></span><span class="gmv">$145</span></li>
+    <li class="row " style="--i:38"><span class="rank">39</span><span class="who"><b>FabD Boutique</b><i>@fabdboutique</i></span><span class="gmv">$130</span></li>
+    <li class="row " style="--i:39"><span class="rank">40</span><span class="who"><b>PokéDHD</b><i>@pokedhd</i></span><span class="gmv">$109</span></li>
+    <li class="row " style="--i:40"><span class="rank">41</span><span class="who"><b>Trissie &amp; the chaos crew</b><i>@trissiebaby</i></span><span class="gmv">$65</span></li>
+    <li class="row " style="--i:41"><span class="rank">42</span><span class="who"><b>Jill Fav Finds</b><i>@curatedbykennady</i></span><span class="gmv">$30</span></li>
+    <li class="row " style="--i:42"><span class="rank">43</span><span class="who"><b>Alexys Zarra</b><i>@alexyszarra</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:43"><span class="rank">44</span><span class="who"><b>JoyfulJourney</b><i>@glowgetter2.0</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:44"><span class="rank">45</span><span class="who"><b>Justanothernurse</b><i>@justanothernurse1</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:45"><span class="rank">46</span><span class="who"><b>Erin</b><i>@honestwitherin</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:46"><span class="rank">47</span><span class="who"><b>Loved By Jen</b><i>@loved_by_jen</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:47"><span class="rank">48</span><span class="who"><b>Kristina</b><i>@shop.with.kristina</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:48"><span class="rank">49</span><span class="who"><b>Wrench Warriors</b><i>@wrench.warrior</i></span><span class="gmv">$0</span></li>
+    <li class="row " style="--i:49"><span class="rank">50</span><span class="who"><b>Montel</b><i>@i.am.montel</i></span><span class="gmv">$0</span></li>
+  </ol>
+  <p class="note">
+    <b>Gold $30,000+</b> &nbsp;&middot;&nbsp; <s>Silver $5,000+</s><br>
+    Live GMV only, net of returns. Clearing a line makes you eligible for review — spots are limited.
+  </p>
 </div>
 </body>
 </html>

@@ -24,10 +24,14 @@
        overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .at{color:var(--muted);font-weight:600;font-size:12.5px;margin-left:7px;}
   .gmv{font-weight:900;font-size:16px;flex-shrink:0;font-variant-numeric:tabular-nums;}
-  .r1,.r2,.r3{background:linear-gradient(90deg,#fffaf992,transparent);}
-  .r1 .rank,.r2 .rank,.r3 .rank{color:var(--gold);font-size:19px;}
-  .r1 .who,.r2 .who,.r3 .who{font-size:16px;font-weight:800;}
-  .r1 .gmv,.r2 .gmv,.r3 .gmv{color:var(--gold);font-size:17px;}
+  .badge{font-size:9.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;
+         padding:3px 9px;border-radius:20px;flex-shrink:0;}
+  .badge.gold{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#4d3800;}
+  .badge.silver{background:linear-gradient(135deg,#dfe5ec,#a9b4c0);color:#2f3740;}
+  .row.gold{background:linear-gradient(90deg,#fff8e8,transparent);}
+  .row.gold .rank,.row.gold .gmv{color:var(--gold);}
+  .row.gold .who{font-weight:800;}
+  .row.silver{background:linear-gradient(90deg,#f7f9fb,transparent);}
   .note{text-align:center;font-size:11.5px;color:var(--muted);margin-top:16px;line-height:1.6;}
   @media(max-width:420px){
     .at{display:block;margin:1px 0 0;}
@@ -40,58 +44,59 @@
   <h1>VIP LIVE <span>SCOREBOARD</span></h1>
   <div class="when">August 2026 &middot; Live GMV</div>
   <div class="board">
-    <div class="row r1"><div class="rank">1</div><div class="who">Ashley Green<span class="at">@ashleygreen33</span></div><div class="gmv">$38,676</div></div>
-    <div class="row r2"><div class="rank">2</div><div class="who">Hustle Papa Paul<span class="at">@hustlepapapaul</span></div><div class="gmv">$30,947</div></div>
-    <div class="row r3"><div class="rank">3</div><div class="who">Tiffany • Life Over 40<span class="at">@tiffany.the10amclub</span></div><div class="gmv">$29,098</div></div>
-    <div class="row"><div class="rank">4</div><div class="who">Jennifer Long<span class="at">@jenniferlong76</span></div><div class="gmv">$28,232</div></div>
-    <div class="row"><div class="rank">5</div><div class="who">Sunday<span class="at">@sundaycanvasstudio</span></div><div class="gmv">$23,708</div></div>
-    <div class="row"><div class="rank">6</div><div class="who">Jam&#x27;s Gems<span class="at">@jamsgems23</span></div><div class="gmv">$16,843</div></div>
-    <div class="row"><div class="rank">7</div><div class="who">lauren-boymom<span class="at">@lauren.boymom</span></div><div class="gmv">$13,642</div></div>
-    <div class="row"><div class="rank">8</div><div class="who">Nikki H<span class="at">@nikki.homestead</span></div><div class="gmv">$12,404</div></div>
-    <div class="row"><div class="rank">9</div><div class="who">Your Friend Regina<span class="at">@yourfriend.reg</span></div><div class="gmv">$11,518</div></div>
-    <div class="row"><div class="rank">10</div><div class="who">Janessa Shop My Finds<span class="at">@janessahamdan</span></div><div class="gmv">$10,174</div></div>
-    <div class="row"><div class="rank">11</div><div class="who">Montanna Gross<span class="at">@montannagross</span></div><div class="gmv">$9,337</div></div>
-    <div class="row"><div class="rank">12</div><div class="who">Mark LeBlanc TTS<span class="at">@markleblanc180</span></div><div class="gmv">$7,696</div></div>
-    <div class="row"><div class="rank">13</div><div class="who">ASHLEY<span class="at">@ashleyxyoung_</span></div><div class="gmv">$7,113</div></div>
-    <div class="row"><div class="rank">14</div><div class="who">carrie_k<span class="at">@carrie_k</span></div><div class="gmv">$6,309</div></div>
-    <div class="row"><div class="rank">15</div><div class="who">MARIE<span class="at">@marie.social.shop</span></div><div class="gmv">$6,005</div></div>
-    <div class="row"><div class="rank">16</div><div class="who">Dayna Kornau<span class="at">@dayna.kornau</span></div><div class="gmv">$3,782</div></div>
-    <div class="row"><div class="rank">17</div><div class="who">Lindsey | Sips+More<span class="at">@tiktokshopwithlindsey</span></div><div class="gmv">$3,600</div></div>
-    <div class="row"><div class="rank">18</div><div class="who">David L. Frost<span class="at">@davidlittle5</span></div><div class="gmv">$2,810</div></div>
-    <div class="row"><div class="rank">19</div><div class="who">Bailey Dudley<span class="at">@thebaileydudley</span></div><div class="gmv">$1,919</div></div>
-    <div class="row"><div class="rank">20</div><div class="who">Maria<span class="at">@mariashomestead</span></div><div class="gmv">$1,818</div></div>
-    <div class="row"><div class="rank">21</div><div class="who">Jaime Cy<span class="at">@psujem00</span></div><div class="gmv">$1,375</div></div>
-    <div class="row"><div class="rank">22</div><div class="who">Jill<span class="at">@jillzjourney</span></div><div class="gmv">$1,071</div></div>
-    <div class="row"><div class="rank">23</div><div class="who">LisaXX<span class="at">@luvbug71</span></div><div class="gmv">$956</div></div>
-    <div class="row"><div class="rank">24</div><div class="who">CEO of MUFFINS<span class="at">@studmuffin82</span></div><div class="gmv">$897</div></div>
-    <div class="row"><div class="rank">25</div><div class="who">Tess<span class="at">@.tessers</span></div><div class="gmv">$776</div></div>
-    <div class="row"><div class="rank">26</div><div class="who">mamacitaaa<span class="at">@.mamacitaaa_</span></div><div class="gmv">$664</div></div>
-    <div class="row"><div class="rank">27</div><div class="who">Mandy I Budget Minded SAHM<span class="at">@mandy_mae40</span></div><div class="gmv">$618</div></div>
-    <div class="row"><div class="rank">28</div><div class="who">southerntiktokmama<span class="at">@southerntiktokmama</span></div><div class="gmv">$513</div></div>
-    <div class="row"><div class="rank">29</div><div class="who">Ruthie<span class="at">@ru_and_her_two</span></div><div class="gmv">$352</div></div>
-    <div class="row"><div class="rank">30</div><div class="who">Jenn<span class="at">@jennofalltrades77</span></div><div class="gmv">$322</div></div>
-    <div class="row"><div class="rank">31</div><div class="who">Oakley and Willows Mom<span class="at">@oakleyandwillowsmom</span></div><div class="gmv">$309</div></div>
-    <div class="row"><div class="rank">32</div><div class="who">Lauren Elise<span class="at">@highonlaurenelise</span></div><div class="gmv">$270</div></div>
-    <div class="row"><div class="rank">33</div><div class="who">Mayra<span class="at">@macostac36</span></div><div class="gmv">$265</div></div>
-    <div class="row"><div class="rank">34</div><div class="who">Tiffanys RootedEssentials<span class="at">@tiffanysrootedessentials</span></div><div class="gmv">$260</div></div>
-    <div class="row"><div class="rank">35</div><div class="who">kaitlyn_447<span class="at">@kaitlyn_447</span></div><div class="gmv">$257</div></div>
-    <div class="row"><div class="rank">36</div><div class="who">Brandy<span class="at">@brandysfinds</span></div><div class="gmv">$244</div></div>
-    <div class="row"><div class="rank">37</div><div class="who">ItsSoDakBenny<span class="at">@itssodakbenny</span></div><div class="gmv">$213</div></div>
-    <div class="row"><div class="rank">38</div><div class="who">CupOfJo<span class="at">@cupofjo10</span></div><div class="gmv">$145</div></div>
-    <div class="row"><div class="rank">39</div><div class="who">FabD Boutique<span class="at">@fabdboutique</span></div><div class="gmv">$130</div></div>
-    <div class="row"><div class="rank">40</div><div class="who">PokéDHD<span class="at">@pokedhd</span></div><div class="gmv">$109</div></div>
-    <div class="row"><div class="rank">41</div><div class="who">Trissie &amp; the chaos crew<span class="at">@trissiebaby</span></div><div class="gmv">$65</div></div>
-    <div class="row"><div class="rank">42</div><div class="who">Jill Fav Finds<span class="at">@curatedbykennady</span></div><div class="gmv">$30</div></div>
-    <div class="row"><div class="rank">43</div><div class="who">Alexys Zarra<span class="at">@alexyszarra</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">44</div><div class="who">JoyfulJourney<span class="at">@glowgetter2.0</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">45</div><div class="who">Justanothernurse<span class="at">@justanothernurse1</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">46</div><div class="who">Erin<span class="at">@honestwitherin</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">47</div><div class="who">Loved By Jen<span class="at">@loved_by_jen</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">48</div><div class="who">Kristina<span class="at">@shop.with.kristina</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">49</div><div class="who">Wrench Warriors<span class="at">@wrench.warrior</span></div><div class="gmv">$0</div></div>
-    <div class="row"><div class="rank">50</div><div class="who">Montel<span class="at">@i.am.montel</span></div><div class="gmv">$0</div></div>
+    <div class="row gold"><div class="rank">1</div><div class="who">Ashley Green<span class="at">@ashleygreen33</span></div><span class="badge gold">Gold</span><div class="gmv">$38,676</div></div>
+    <div class="row gold"><div class="rank">2</div><div class="who">Hustle Papa Paul<span class="at">@hustlepapapaul</span></div><span class="badge gold">Gold</span><div class="gmv">$30,947</div></div>
+    <div class="row silver"><div class="rank">3</div><div class="who">Tiffany • Life Over 40<span class="at">@tiffany.the10amclub</span></div><span class="badge silver">Silver</span><div class="gmv">$29,098</div></div>
+    <div class="row silver"><div class="rank">4</div><div class="who">Jennifer Long<span class="at">@jenniferlong76</span></div><span class="badge silver">Silver</span><div class="gmv">$28,232</div></div>
+    <div class="row silver"><div class="rank">5</div><div class="who">Sunday<span class="at">@sundaycanvasstudio</span></div><span class="badge silver">Silver</span><div class="gmv">$23,708</div></div>
+    <div class="row silver"><div class="rank">6</div><div class="who">Jam&#x27;s Gems<span class="at">@jamsgems23</span></div><span class="badge silver">Silver</span><div class="gmv">$16,843</div></div>
+    <div class="row silver"><div class="rank">7</div><div class="who">lauren-boymom<span class="at">@lauren.boymom</span></div><span class="badge silver">Silver</span><div class="gmv">$13,642</div></div>
+    <div class="row silver"><div class="rank">8</div><div class="who">Nikki H<span class="at">@nikki.homestead</span></div><span class="badge silver">Silver</span><div class="gmv">$12,404</div></div>
+    <div class="row silver"><div class="rank">9</div><div class="who">Your Friend Regina<span class="at">@yourfriend.reg</span></div><span class="badge silver">Silver</span><div class="gmv">$11,518</div></div>
+    <div class="row silver"><div class="rank">10</div><div class="who">Janessa Shop My Finds<span class="at">@janessahamdan</span></div><span class="badge silver">Silver</span><div class="gmv">$10,174</div></div>
+    <div class="row silver"><div class="rank">11</div><div class="who">Montanna Gross<span class="at">@montannagross</span></div><span class="badge silver">Silver</span><div class="gmv">$9,337</div></div>
+    <div class="row silver"><div class="rank">12</div><div class="who">Mark LeBlanc TTS<span class="at">@markleblanc180</span></div><span class="badge silver">Silver</span><div class="gmv">$7,696</div></div>
+    <div class="row silver"><div class="rank">13</div><div class="who">ASHLEY<span class="at">@ashleyxyoung_</span></div><span class="badge silver">Silver</span><div class="gmv">$7,113</div></div>
+    <div class="row silver"><div class="rank">14</div><div class="who">carrie_k<span class="at">@carrie_k</span></div><span class="badge silver">Silver</span><div class="gmv">$6,309</div></div>
+    <div class="row silver"><div class="rank">15</div><div class="who">MARIE<span class="at">@marie.social.shop</span></div><span class="badge silver">Silver</span><div class="gmv">$6,005</div></div>
+    <div class="row "><div class="rank">16</div><div class="who">Dayna Kornau<span class="at">@dayna.kornau</span></div><div class="gmv">$3,782</div></div>
+    <div class="row "><div class="rank">17</div><div class="who">Lindsey | Sips+More<span class="at">@tiktokshopwithlindsey</span></div><div class="gmv">$3,600</div></div>
+    <div class="row "><div class="rank">18</div><div class="who">David L. Frost<span class="at">@davidlittle5</span></div><div class="gmv">$2,810</div></div>
+    <div class="row "><div class="rank">19</div><div class="who">Bailey Dudley<span class="at">@thebaileydudley</span></div><div class="gmv">$1,919</div></div>
+    <div class="row "><div class="rank">20</div><div class="who">Maria<span class="at">@mariashomestead</span></div><div class="gmv">$1,818</div></div>
+    <div class="row "><div class="rank">21</div><div class="who">Jaime Cy<span class="at">@psujem00</span></div><div class="gmv">$1,375</div></div>
+    <div class="row "><div class="rank">22</div><div class="who">Jill<span class="at">@jillzjourney</span></div><div class="gmv">$1,071</div></div>
+    <div class="row "><div class="rank">23</div><div class="who">LisaXX<span class="at">@luvbug71</span></div><div class="gmv">$956</div></div>
+    <div class="row "><div class="rank">24</div><div class="who">CEO of MUFFINS<span class="at">@studmuffin82</span></div><div class="gmv">$897</div></div>
+    <div class="row "><div class="rank">25</div><div class="who">Tess<span class="at">@.tessers</span></div><div class="gmv">$776</div></div>
+    <div class="row "><div class="rank">26</div><div class="who">mamacitaaa<span class="at">@.mamacitaaa_</span></div><div class="gmv">$664</div></div>
+    <div class="row "><div class="rank">27</div><div class="who">Mandy I Budget Minded SAHM<span class="at">@mandy_mae40</span></div><div class="gmv">$618</div></div>
+    <div class="row "><div class="rank">28</div><div class="who">southerntiktokmama<span class="at">@southerntiktokmama</span></div><div class="gmv">$513</div></div>
+    <div class="row "><div class="rank">29</div><div class="who">Ruthie<span class="at">@ru_and_her_two</span></div><div class="gmv">$352</div></div>
+    <div class="row "><div class="rank">30</div><div class="who">Jenn<span class="at">@jennofalltrades77</span></div><div class="gmv">$322</div></div>
+    <div class="row "><div class="rank">31</div><div class="who">Oakley and Willows Mom<span class="at">@oakleyandwillowsmom</span></div><div class="gmv">$309</div></div>
+    <div class="row "><div class="rank">32</div><div class="who">Lauren Elise<span class="at">@highonlaurenelise</span></div><div class="gmv">$270</div></div>
+    <div class="row "><div class="rank">33</div><div class="who">Mayra<span class="at">@macostac36</span></div><div class="gmv">$265</div></div>
+    <div class="row "><div class="rank">34</div><div class="who">Tiffanys RootedEssentials<span class="at">@tiffanysrootedessentials</span></div><div class="gmv">$260</div></div>
+    <div class="row "><div class="rank">35</div><div class="who">kaitlyn_447<span class="at">@kaitlyn_447</span></div><div class="gmv">$257</div></div>
+    <div class="row "><div class="rank">36</div><div class="who">Brandy<span class="at">@brandysfinds</span></div><div class="gmv">$244</div></div>
+    <div class="row "><div class="rank">37</div><div class="who">ItsSoDakBenny<span class="at">@itssodakbenny</span></div><div class="gmv">$213</div></div>
+    <div class="row "><div class="rank">38</div><div class="who">CupOfJo<span class="at">@cupofjo10</span></div><div class="gmv">$145</div></div>
+    <div class="row "><div class="rank">39</div><div class="who">FabD Boutique<span class="at">@fabdboutique</span></div><div class="gmv">$130</div></div>
+    <div class="row "><div class="rank">40</div><div class="who">PokéDHD<span class="at">@pokedhd</span></div><div class="gmv">$109</div></div>
+    <div class="row "><div class="rank">41</div><div class="who">Trissie &amp; the chaos crew<span class="at">@trissiebaby</span></div><div class="gmv">$65</div></div>
+    <div class="row "><div class="rank">42</div><div class="who">Jill Fav Finds<span class="at">@curatedbykennady</span></div><div class="gmv">$30</div></div>
+    <div class="row "><div class="rank">43</div><div class="who">Alexys Zarra<span class="at">@alexyszarra</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">44</div><div class="who">JoyfulJourney<span class="at">@glowgetter2.0</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">45</div><div class="who">Justanothernurse<span class="at">@justanothernurse1</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">46</div><div class="who">Erin<span class="at">@honestwitherin</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">47</div><div class="who">Loved By Jen<span class="at">@loved_by_jen</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">48</div><div class="who">Kristina<span class="at">@shop.with.kristina</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">49</div><div class="who">Wrench Warriors<span class="at">@wrench.warrior</span></div><div class="gmv">$0</div></div>
+    <div class="row "><div class="rank">50</div><div class="who">Montel<span class="at">@i.am.montel</span></div><div class="gmv">$0</div></div>
   </div>
-  <p class="note">Live GMV only, net of returns. Updated August 2026.</p>
+  <p class="note">Gold $30,000+ &middot; Silver $5,000+ &middot; live GMV, net of returns.<br>
+     Clearing a line makes you eligible for review &mdash; spots are limited.</p>
 </div>
 </body>
 </html>

@@ -1,11 +1,12 @@
 import json, html, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PERIOD = "August 2026"
 GOLD, SILVER = 30000, 5000
 
-rows = json.load(open(os.path.join(HERE, 'data.json')))
-rows.sort(key=lambda r: -r['aug'])
+DATA = json.load(open(os.path.join(HERE, 'data.json')))
+PERIOD, COVERAGE = DATA['period'], DATA['coverage']
+UPDATED, SOURCE = DATA['updated'], DATA['source']
+rows = sorted(DATA['rows'], key=lambda r: -r['gmv'])
 
 m = lambda v: f"${v:,.0f}"
 e = lambda s: html.escape(str(s))
@@ -15,13 +16,13 @@ def tier(v):
 
 def line(r, i):
     rank = i + 1
-    tcls, tname = tier(r['aug'])
+    tcls, tname = tier(r['gmv'])
     badge = f'<span class="badge">{tname}</span>' if tname else ''
     return (f'<li class="row {tcls}" style="--i:{i}">'
             f'<span class="rank">{rank}</span>'
             f'<span class="who"><b>{e(r["name"])}</b><i>@{e(r["handle"])}</i></span>'
             f'{badge}'
-            f'<span class="gmv">{m(r["aug"])}</span>'
+            f'<span class="gmv">{m(r["gmv"])}</span>'
             f'</li>')
 
 CSS = """
@@ -65,6 +66,7 @@ CSS = """
         background-clip:text;color:transparent;}
   .when{margin-top:11px;font-size:11.5px;font-weight:700;letter-spacing:.2em;
         text-transform:uppercase;color:var(--dim);}
+  .stamp{margin-top:7px;font-size:10.5px;font-weight:600;color:#5c6a80;letter-spacing:.03em;}
 
   ol{list-style:none;display:flex;flex-direction:column;gap:7px;}
   .row{
@@ -141,13 +143,15 @@ doc = f"""<!DOCTYPE html>
     <div class="live"><span class="dot"></span>Frost Buddy VIP Live</div>
     <h1><span class="a">VIP LIVE</span><br><span class="b">SCOREBOARD</span></h1>
     <div class="when">{PERIOD} &middot; Live GMV</div>
+    <div class="stamp">Updated {UPDATED} &middot; data through {COVERAGE.split(chr(8211))[-1].strip()}</div>
   </header>
   <ol>
 {chr(10).join('    ' + line(r, i) for i, r in enumerate(rows))}
   </ol>
   <p class="note">
     <b>Gold {m(GOLD)}+</b> &nbsp;&middot;&nbsp; <s>Silver {m(SILVER)}+</s><br>
-    Live GMV only, net of returns. Clearing a line makes you eligible for review — spots are limited.
+    Live GMV from your TikTok LIVE sessions ({COVERAGE}). Video and showcase sales are not counted.<br>
+    Clearing a line makes you eligible for review — spots are limited.
   </p>
 </div>
 </body>

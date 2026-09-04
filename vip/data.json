@@ -1,228 +1,228 @@
 {
- "period": "August 2026",
- "coverage": "Aug 1 \u2013 Aug 31, 2026",
- "updated": "September 1, 2026",
+ "period": "September 2026",
+ "coverage": "Sept 1 \u2013 Sept 4, 2026",
+ "updated": "September 4, 2026",
  "source": "TikTok Shop live-session analytics",
  "rows": [
   {
-   "handle": "ashleygreen33",
-   "name": "Ashley Green",
-   "gmv": 59147.98
+   "handle": "janessahamdan",
+   "name": "Janessa Shop My Finds",
+   "gmv": 5986.98
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 43995.81
+   "gmv": 4152.68
+  },
+  {
+   "handle": "ashleygreen33",
+   "name": "Ashley Green",
+   "gmv": 4059.1
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 43819.12
+   "gmv": 3128.28
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 38634.78
+   "gmv": 3085.85
   },
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 37070.54
-  },
-  {
-   "handle": "jamsgems23",
-   "name": "Jam's Gems",
-   "gmv": 21223.78
-  },
-  {
-   "handle": "janessahamdan",
-   "name": "Janessa Shop My Finds",
-   "gmv": 18880.62
+   "gmv": 2167.66
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 18686.07
-  },
-  {
-   "handle": "yourfriend.reg",
-   "name": "Your Friend Regina",
-   "gmv": 18064.79
-  },
-  {
-   "handle": "nikki.homestead",
-   "name": "Nikki H",
-   "gmv": 17128.75
+   "gmv": 2149.54
   },
   {
    "handle": "montannagross",
    "name": "Montanna Gross",
-   "gmv": 13007.95
-  },
-  {
-   "handle": "ashleyxyoung_",
-   "name": "ASHLEY",
-   "gmv": 10095.48
-  },
-  {
-   "handle": "markleblanc180",
-   "name": "Mark LeBlanc TTS",
-   "gmv": 9937.73
-  },
-  {
-   "handle": "carrie_k",
-   "name": "carrie_k",
-   "gmv": 9805.72
-  },
-  {
-   "handle": "marie.social.shop",
-   "name": "MARIE",
-   "gmv": 8216.29
-  },
-  {
-   "handle": "tiktokshopwithlindsey",
-   "name": "Lindsey | Sips+More",
-   "gmv": 6711.8
+   "gmv": 2000.62
   },
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 6070.55
+   "gmv": 1855.05
   },
   {
-   "handle": "davidlittle5",
-   "name": "David L. Frost",
-   "gmv": 4255.54
+   "handle": "marie.social.shop",
+   "name": "MARIE",
+   "gmv": 1637.35
   },
   {
-   "handle": "mariashomestead",
-   "name": "Maria",
-   "gmv": 3401.91
+   "handle": "tiktokshopwithlindsey",
+   "name": "Lindsey | Sips+More",
+   "gmv": 1544.89
   },
   {
-   "handle": ".tessers",
-   "name": "Tess",
-   "gmv": 2466.29
-  },
-  {
-   "handle": "psujem00",
-   "name": "Jaime Cy",
-   "gmv": 2294.04
-  },
-  {
-   "handle": "thebaileydudley",
-   "name": "Bailey Dudley",
-   "gmv": 2292.9
-  },
-  {
-   "handle": "studmuffin82",
-   "name": "CEO of MUFFINS",
-   "gmv": 1885.84
+   "handle": "carrie_k",
+   "name": "carrie_k",
+   "gmv": 1520.9
   },
   {
    "handle": "brandysfinds",
    "name": "Brandy",
-   "gmv": 1603.54
+   "gmv": 1245.79
   },
   {
-   "handle": ".mamacitaaa_",
-   "name": "mamacitaaa",
-   "gmv": 1580.87
+   "handle": "jamsgems23",
+   "name": "Jam's Gems",
+   "gmv": 1163.44
   },
   {
-   "handle": "jillzjourney",
-   "name": "Jill",
-   "gmv": 1414.17
+   "handle": "markleblanc180",
+   "name": "Mark LeBlanc TTS",
+   "gmv": 965.92
   },
   {
-   "handle": "luvbug71",
-   "name": "LisaXX",
-   "gmv": 1117.48
-  },
-  {
-   "handle": "oakleyandwillowsmom",
-   "name": "Oakley and Willows Mom",
-   "gmv": 862.53
-  },
-  {
-   "handle": "mandy_mae40",
-   "name": "Mandy I Budget Minded SAHM",
-   "gmv": 774.58
-  },
-  {
-   "handle": "highonlaurenelise",
-   "name": "Lauren Elise",
-   "gmv": 713.08
-  },
-  {
-   "handle": "southerntiktokmama",
-   "name": "southerntiktokmama",
-   "gmv": 602.12
-  },
-  {
-   "handle": "ru_and_her_two",
-   "name": "Ruthie",
-   "gmv": 501.91
-  },
-  {
-   "handle": "jennofalltrades77",
-   "name": "Jenn",
-   "gmv": 383.12
-  },
-  {
-   "handle": "kaitlyn_447",
-   "name": "kaitlyn_447",
-   "gmv": 314.95
-  },
-  {
-   "handle": "tiffanysrootedessentials",
-   "name": "Tiffanys RootedEssentials",
-   "gmv": 307.23
-  },
-  {
-   "handle": "macostac36",
-   "name": "Mayra",
-   "gmv": 298.52
-  },
-  {
-   "handle": "itssodakbenny",
-   "name": "ItsSoDakBenny",
-   "gmv": 275.15
-  },
-  {
-   "handle": "pokedhd",
-   "name": "Pok\u00e9DHD",
-   "gmv": 225.62
-  },
-  {
-   "handle": "cupofjo10",
-   "name": "CupOfJo",
-   "gmv": 179.09
-  },
-  {
-   "handle": "trissiebaby",
-   "name": "Trissie & the chaos crew",
-   "gmv": 141.71
-  },
-  {
-   "handle": "fabdboutique",
-   "name": "FabD Boutique",
-   "gmv": 130.16
+   "handle": "mariashomestead",
+   "name": "Maria",
+   "gmv": 961.85
   },
   {
    "handle": "alexyszarra",
    "name": "Alexys Zarra",
-   "gmv": 74.19
+   "gmv": 647.65
+  },
+  {
+   "handle": "yourfriend.reg",
+   "name": "Your Friend Regina",
+   "gmv": 568.46
+  },
+  {
+   "handle": ".tessers",
+   "name": "Tess",
+   "gmv": 501.74
+  },
+  {
+   "handle": "davidlittle5",
+   "name": "David L. Frost",
+   "gmv": 410.42
+  },
+  {
+   "handle": "psujem00",
+   "name": "Jaime Cy",
+   "gmv": 273.87
+  },
+  {
+   "handle": "ashleyxyoung_",
+   "name": "ASHLEY",
+   "gmv": 263.43
+  },
+  {
+   "handle": "nikki.homestead",
+   "name": "Nikki H",
+   "gmv": 228.01
+  },
+  {
+   "handle": "jillzjourney",
+   "name": "Jill",
+   "gmv": 177.71
+  },
+  {
+   "handle": "macostac36",
+   "name": "Mayra",
+   "gmv": 154.46
+  },
+  {
+   "handle": ".mamacitaaa_",
+   "name": "mamacitaaa",
+   "gmv": 136.96
+  },
+  {
+   "handle": "mandy_mae40",
+   "name": "Mandy I Budget Minded SAHM",
+   "gmv": 116.47
+  },
+  {
+   "handle": "luvbug71",
+   "name": "LisaXX",
+   "gmv": 103.12
+  },
+  {
+   "handle": "studmuffin82",
+   "name": "CEO of MUFFINS",
+   "gmv": 94.28
+  },
+  {
+   "handle": "fabdboutique",
+   "name": "FabD Boutique",
+   "gmv": 79.98
+  },
+  {
+   "handle": "oakleyandwillowsmom",
+   "name": "Oakley and Willows Mom",
+   "gmv": 44.98
+  },
+  {
+   "handle": "thebaileydudley",
+   "name": "Bailey Dudley",
+   "gmv": 0.0
+  },
+  {
+   "handle": "highonlaurenelise",
+   "name": "Lauren Elise",
+   "gmv": 0.0
+  },
+  {
+   "handle": "southerntiktokmama",
+   "name": "southerntiktokmama",
+   "gmv": 0.0
+  },
+  {
+   "handle": "ru_and_her_two",
+   "name": "Ruthie",
+   "gmv": 0.0
+  },
+  {
+   "handle": "jennofalltrades77",
+   "name": "Jenn",
+   "gmv": 0.0
+  },
+  {
+   "handle": "kaitlyn_447",
+   "name": "kaitlyn_447",
+   "gmv": 0.0
+  },
+  {
+   "handle": "tiffanysrootedessentials",
+   "name": "Tiffanys RootedEssentials",
+   "gmv": 0.0
+  },
+  {
+   "handle": "itssodakbenny",
+   "name": "ItsSoDakBenny",
+   "gmv": 0.0
+  },
+  {
+   "handle": "pokedhd",
+   "name": "Pok\u00e9DHD",
+   "gmv": 0.0
+  },
+  {
+   "handle": "cupofjo10",
+   "name": "CupOfJo",
+   "gmv": 0.0
+  },
+  {
+   "handle": "trissiebaby",
+   "name": "Trissie & the chaos crew",
+   "gmv": 0.0
   },
   {
    "handle": "i.am.montel",
    "name": "Montel",
-   "gmv": 50.88
+   "gmv": 0.0
   },
   {
    "handle": "curatedbykennady",
    "name": "Jill Fav Finds",
-   "gmv": 29.99
+   "gmv": 0.0
   },
   {
    "handle": "glowgetter2.0",

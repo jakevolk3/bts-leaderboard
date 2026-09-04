@@ -151,6 +151,7 @@ doc = f"""<!DOCTYPE html>
   <p class="note">
     <b>Gold {m(GOLD)}+</b> &nbsp;&middot;&nbsp; <s>Silver {m(SILVER)}+</s><br>
     Live GMV from your TikTok LIVE sessions ({COVERAGE}). Video and showcase sales are not counted.<br>
+    The most recent day or two is still settling and may rise. Month resets on the 1st.<br>
     Clearing a line makes you eligible for review — spots are limited.
   </p>
 </div>

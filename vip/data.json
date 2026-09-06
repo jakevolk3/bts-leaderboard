@@ -1,43 +1,63 @@
 {
  "period": "September 2026",
- "coverage": "Sept 1 \u2013 Sept 4, 2026",
- "updated": "September 4, 2026",
+ "coverage": "Sep 1 \u2013 Sep 6, 2026",
+ "updated": "September 6, 2026",
  "source": "TikTok Shop live-session analytics",
  "rows": [
   {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 5986.98
-  },
-  {
-   "handle": "tiffany.the10amclub",
-   "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 4152.68
-  },
-  {
-   "handle": "ashleygreen33",
-   "name": "Ashley Green",
-   "gmv": 4059.1
+   "gmv": 8160.64
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 3128.28
+   "gmv": 6366.23
+  },
+  {
+   "handle": "tiffany.the10amclub",
+   "name": "Tiffany \u2022 Life Over 40",
+   "gmv": 5595.87
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 3085.85
+   "gmv": 4378.02
+  },
+  {
+   "handle": "ashleygreen33",
+   "name": "Ashley Green",
+   "gmv": 4097.34
   },
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 2167.66
+   "gmv": 3616.64
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 2149.54
+   "gmv": 3097.99
+  },
+  {
+   "handle": "jamsgems23",
+   "name": "Jam's Gems",
+   "gmv": 3030.34
+  },
+  {
+   "handle": "dayna.kornau",
+   "name": "Dayna Kornau",
+   "gmv": 2500.82
+  },
+  {
+   "handle": "carrie_k",
+   "name": "carrie_k",
+   "gmv": 2164.65
+  },
+  {
+   "handle": "tiktokshopwithlindsey",
+   "name": "Lindsey | Sips+More",
+   "gmv": 2107.57
   },
   {
    "handle": "montannagross",
@@ -45,59 +65,49 @@
    "gmv": 2000.62
   },
   {
-   "handle": "dayna.kornau",
-   "name": "Dayna Kornau",
-   "gmv": 1855.05
+   "handle": "yourfriend.reg",
+   "name": "Your Friend Regina",
+   "gmv": 1994.31
   },
   {
    "handle": "marie.social.shop",
    "name": "MARIE",
-   "gmv": 1637.35
-  },
-  {
-   "handle": "tiktokshopwithlindsey",
-   "name": "Lindsey | Sips+More",
-   "gmv": 1544.89
-  },
-  {
-   "handle": "carrie_k",
-   "name": "carrie_k",
-   "gmv": 1520.9
-  },
-  {
-   "handle": "brandysfinds",
-   "name": "Brandy",
-   "gmv": 1245.79
-  },
-  {
-   "handle": "jamsgems23",
-   "name": "Jam's Gems",
-   "gmv": 1163.44
+   "gmv": 1830.27
   },
   {
    "handle": "markleblanc180",
    "name": "Mark LeBlanc TTS",
-   "gmv": 965.92
+   "gmv": 1568.2
+  },
+  {
+   "handle": "brandysfinds",
+   "name": "Brandy",
+   "gmv": 1529.43
   },
   {
    "handle": "mariashomestead",
    "name": "Maria",
-   "gmv": 961.85
+   "gmv": 1254.41
+  },
+  {
+   "handle": "mandy_mae40",
+   "name": "Mandy I Budget Minded SAHM",
+   "gmv": 1159.42
+  },
+  {
+   "handle": "nikki.homestead",
+   "name": "Nikki H",
+   "gmv": 955.56
+  },
+  {
+   "handle": ".tessers",
+   "name": "Tess",
+   "gmv": 690.99
   },
   {
    "handle": "alexyszarra",
    "name": "Alexys Zarra",
    "gmv": 647.65
-  },
-  {
-   "handle": "yourfriend.reg",
-   "name": "Your Friend Regina",
-   "gmv": 568.46
-  },
-  {
-   "handle": ".tessers",
-   "name": "Tess",
-   "gmv": 501.74
   },
   {
    "handle": "davidlittle5",
@@ -115,9 +125,14 @@
    "gmv": 263.43
   },
   {
-   "handle": "nikki.homestead",
-   "name": "Nikki H",
-   "gmv": 228.01
+   "handle": "studmuffin82",
+   "name": "CEO of MUFFINS",
+   "gmv": 247.41
+  },
+  {
+   "handle": "macostac36",
+   "name": "Mayra",
+   "gmv": 205.14
   },
   {
    "handle": "jillzjourney",
@@ -125,19 +140,9 @@
    "gmv": 177.71
   },
   {
-   "handle": "macostac36",
-   "name": "Mayra",
-   "gmv": 154.46
-  },
-  {
    "handle": ".mamacitaaa_",
    "name": "mamacitaaa",
    "gmv": 136.96
-  },
-  {
-   "handle": "mandy_mae40",
-   "name": "Mandy I Budget Minded SAHM",
-   "gmv": 116.47
   },
   {
    "handle": "luvbug71",
@@ -145,19 +150,14 @@
    "gmv": 103.12
   },
   {
-   "handle": "studmuffin82",
-   "name": "CEO of MUFFINS",
-   "gmv": 94.28
+   "handle": "oakleyandwillowsmom",
+   "name": "Oakley and Willows Mom",
+   "gmv": 87.47
   },
   {
    "handle": "fabdboutique",
    "name": "FabD Boutique",
    "gmv": 79.98
-  },
-  {
-   "handle": "oakleyandwillowsmom",
-   "name": "Oakley and Willows Mom",
-   "gmv": 44.98
   },
   {
    "handle": "thebaileydudley",

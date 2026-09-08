@@ -1,83 +1,88 @@
 {
  "period": "September 2026",
- "coverage": "Sep 1 \u2013 Sep 6, 2026",
- "updated": "September 6, 2026",
+ "coverage": "Sep 1 \u2013 Sep 8, 2026",
+ "updated": "September 8, 2026",
  "source": "TikTok Shop live-session analytics",
  "rows": [
   {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 8160.64
+   "gmv": 12361.17
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 6366.23
-  },
-  {
-   "handle": "tiffany.the10amclub",
-   "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 5595.87
-  },
-  {
-   "handle": "jenniferlong76",
-   "name": "Jennifer Long",
-   "gmv": 4378.02
+   "gmv": 8873.3
   },
   {
    "handle": "ashleygreen33",
    "name": "Ashley Green",
-   "gmv": 4097.34
+   "gmv": 7312.25
+  },
+  {
+   "handle": "jenniferlong76",
+   "name": "Jennifer Long",
+   "gmv": 6931.35
+  },
+  {
+   "handle": "tiffany.the10amclub",
+   "name": "Tiffany \u2022 Life Over 40",
+   "gmv": 6356.47
   },
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 3616.64
+   "gmv": 4904.5
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 3097.99
+   "gmv": 4100.72
   },
   {
    "handle": "jamsgems23",
    "name": "Jam's Gems",
-   "gmv": 3030.34
-  },
-  {
-   "handle": "dayna.kornau",
-   "name": "Dayna Kornau",
-   "gmv": 2500.82
-  },
-  {
-   "handle": "carrie_k",
-   "name": "carrie_k",
-   "gmv": 2164.65
-  },
-  {
-   "handle": "tiktokshopwithlindsey",
-   "name": "Lindsey | Sips+More",
-   "gmv": 2107.57
+   "gmv": 3987.35
   },
   {
    "handle": "montannagross",
    "name": "Montanna Gross",
-   "gmv": 2000.62
+   "gmv": 3170.3
   },
   {
-   "handle": "yourfriend.reg",
-   "name": "Your Friend Regina",
-   "gmv": 1994.31
+   "handle": "dayna.kornau",
+   "name": "Dayna Kornau",
+   "gmv": 3129.87
+  },
+  {
+   "handle": "carrie_k",
+   "name": "carrie_k",
+   "gmv": 3049.07
+  },
+  {
+   "handle": "tiktokshopwithlindsey",
+   "name": "Lindsey | Sips+More",
+   "gmv": 2778.03
   },
   {
    "handle": "marie.social.shop",
    "name": "MARIE",
-   "gmv": 1830.27
+   "gmv": 2579.5
+  },
+  {
+   "handle": "yourfriend.reg",
+   "name": "Your Friend Regina",
+   "gmv": 2482.17
+  },
+  {
+   "handle": "nikki.homestead",
+   "name": "Nikki H",
+   "gmv": 1641.72
   },
   {
    "handle": "markleblanc180",
    "name": "Mark LeBlanc TTS",
-   "gmv": 1568.2
+   "gmv": 1606.18
   },
   {
    "handle": "brandysfinds",
@@ -87,7 +92,7 @@
   {
    "handle": "mariashomestead",
    "name": "Maria",
-   "gmv": 1254.41
+   "gmv": 1297.4
   },
   {
    "handle": "mandy_mae40",
@@ -95,14 +100,9 @@
    "gmv": 1159.42
   },
   {
-   "handle": "nikki.homestead",
-   "name": "Nikki H",
-   "gmv": 955.56
-  },
-  {
    "handle": ".tessers",
    "name": "Tess",
-   "gmv": 690.99
+   "gmv": 1005.91
   },
   {
    "handle": "alexyszarra",
@@ -112,22 +112,22 @@
   {
    "handle": "davidlittle5",
    "name": "David L. Frost",
-   "gmv": 410.42
-  },
-  {
-   "handle": "psujem00",
-   "name": "Jaime Cy",
-   "gmv": 273.87
+   "gmv": 512.13
   },
   {
    "handle": "ashleyxyoung_",
    "name": "ASHLEY",
-   "gmv": 263.43
+   "gmv": 323.25
+  },
+  {
+   "handle": "psujem00",
+   "name": "Jaime Cy",
+   "gmv": 308.86
   },
   {
    "handle": "studmuffin82",
    "name": "CEO of MUFFINS",
-   "gmv": 247.41
+   "gmv": 279.71
   },
   {
    "handle": "macostac36",
@@ -140,14 +140,14 @@
    "gmv": 177.71
   },
   {
+   "handle": "luvbug71",
+   "name": "LisaXX",
+   "gmv": 140.32
+  },
+  {
    "handle": ".mamacitaaa_",
    "name": "mamacitaaa",
    "gmv": 136.96
-  },
-  {
-   "handle": "luvbug71",
-   "name": "LisaXX",
-   "gmv": 103.12
   },
   {
    "handle": "oakleyandwillowsmom",
@@ -158,6 +158,11 @@
    "handle": "fabdboutique",
    "name": "FabD Boutique",
    "gmv": 79.98
+  },
+  {
+   "handle": "pokedhd",
+   "name": "Pok\u00e9DHD",
+   "gmv": 40.5
   },
   {
    "handle": "thebaileydudley",
@@ -197,11 +202,6 @@
   {
    "handle": "itssodakbenny",
    "name": "ItsSoDakBenny",
-   "gmv": 0.0
-  },
-  {
-   "handle": "pokedhd",
-   "name": "Pok\u00e9DHD",
    "gmv": 0.0
   },
   {

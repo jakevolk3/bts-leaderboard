@@ -13,6 +13,7 @@ import time, urllib.parse, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = "https://open-api.tiktokglobalshop.com"
 BRAND = {"frostbuddy"}          # shop's own account, not a VIP seller
+TOP_N = 50                      # board always shows the top N sellers
 
 def env(name):
     v = os.environ.get(name)
@@ -121,18 +122,29 @@ def main():
 
     path = os.path.join(HERE, "data.json")
     prev = json.load(open(path))
-    roster = [(r["handle"], r["name"]) for r in prev["rows"]]
-    rows = [{"handle": h, "name": n, "gmv": round(gmv.get(h, 0.0), 2)} for h, n in roster]
-    rows.sort(key=lambda r: -r["gmv"])
 
-    off = sorted(((h, v) for h, v in gmv.items() if h not in dict(roster)),
-                 key=lambda z: -z[1])[:5]
+    # Display names we know, carried forward across refreshes. Sellers we have
+    # no real name for are shown by handle.
+    names = dict(prev.get("names") or {})
+    for r in prev.get("rows") or []:
+        names.setdefault(r["handle"], r["name"])
+
+    # Every seller with live sales this month, not a fixed roster - so a new
+    # seller appears on their first sale instead of being invisible.
+    rows = [{"handle": h, "name": names.get(h, h), "gmv": round(v, 2)}
+            for h, v in gmv.items() if v > 0]
+    rows.sort(key=lambda r: -r["gmv"])
+    selling = len(rows)
+    rows = rows[:TOP_N]
+
+    new_faces = [r for r in rows if r["handle"] not in names]
     coverage_end = last_day or start
     doc = {
         "period": start.strftime("%B %Y"),
         "coverage": f"{start.strftime('%b %-d')} – {coverage_end.strftime('%b %-d, %Y')}",
         "updated": datetime.date.today().strftime("%B %-d, %Y"),
         "source": "TikTok Shop live-session analytics",
+        "names": {r["handle"]: r["name"] for r in rows} | names,
         "rows": rows,
     }
     total = sum(r["gmv"] for r in rows)
@@ -147,16 +159,19 @@ def main():
                  f"${prev_total:,.0f} to ${total:,.0f}. The pull is likely "
                  f"incomplete. Re-run, or pass --force if this is expected.")
 
+
     json.dump(doc, open(path, "w"), indent=1)
     subprocess.run([sys.executable, os.path.join(HERE, "build.py")], check=True)
 
+    print(f"showing top {len(rows)} of {selling} sellers with live GMV")
     print(f"month={args.month} sessions={len(sessions)} "
           f"coverage={doc['coverage']} tiktok_latest={latest}")
     print(f"total=${total:,.0f} gold={sum(1 for r in rows if r['gmv']>=30000)} "
           f"silver={sum(1 for r in rows if 5000<=r['gmv']<30000)} "
           f"active={sum(1 for r in rows if r['gmv']>0)}/{len(rows)}")
-    if off:
-        print("off-roster creators with GMV:", ", ".join(f"@{h} ${v:,.0f}" for h, v in off))
+    if new_faces:
+        print(f"first appearance ({len(new_faces)}):",
+              ", ".join(f"@{r['handle']} ${r['gmv']:,.0f}" for r in new_faces[:8]))
 
 
 if __name__ == "__main__":

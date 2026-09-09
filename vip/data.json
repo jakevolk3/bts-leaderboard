@@ -1,98 +1,103 @@
 {
  "period": "September 2026",
- "coverage": "Sep 1 \u2013 Sep 8, 2026",
- "updated": "September 8, 2026",
+ "coverage": "Sep 1 \u2013 Sep 9, 2026",
+ "updated": "September 9, 2026",
  "source": "TikTok Shop live-session analytics",
  "rows": [
   {
+   "handle": "ashleygreen33",
+   "name": "Ashley Green",
+   "gmv": 19186.79
+  },
+  {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 12361.17
+   "gmv": 15108.39
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 8873.3
-  },
-  {
-   "handle": "ashleygreen33",
-   "name": "Ashley Green",
-   "gmv": 7312.25
+   "gmv": 11770.08
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 6931.35
+   "gmv": 11597.27
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 6356.47
-  },
-  {
-   "handle": "sundaycanvasstudio",
-   "name": "Sunday",
-   "gmv": 4904.5
+   "gmv": 10415.55
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 4100.72
+   "gmv": 7349.59
   },
   {
-   "handle": "jamsgems23",
-   "name": "Jam's Gems",
-   "gmv": 3987.35
-  },
-  {
-   "handle": "montannagross",
-   "name": "Montanna Gross",
-   "gmv": 3170.3
-  },
-  {
-   "handle": "dayna.kornau",
-   "name": "Dayna Kornau",
-   "gmv": 3129.87
-  },
-  {
-   "handle": "carrie_k",
-   "name": "carrie_k",
-   "gmv": 3049.07
-  },
-  {
-   "handle": "tiktokshopwithlindsey",
-   "name": "Lindsey | Sips+More",
-   "gmv": 2778.03
-  },
-  {
-   "handle": "marie.social.shop",
-   "name": "MARIE",
-   "gmv": 2579.5
+   "handle": "sundaycanvasstudio",
+   "name": "Sunday",
+   "gmv": 7237.68
   },
   {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
-   "gmv": 2482.17
+   "gmv": 6015.78
+  },
+  {
+   "handle": "jamsgems23",
+   "name": "Jam's Gems",
+   "gmv": 5247.65
+  },
+  {
+   "handle": "montannagross",
+   "name": "Montanna Gross",
+   "gmv": 4384.59
+  },
+  {
+   "handle": "carrie_k",
+   "name": "carrie_k",
+   "gmv": 3834.59
+  },
+  {
+   "handle": "dayna.kornau",
+   "name": "Dayna Kornau",
+   "gmv": 3816.53
+  },
+  {
+   "handle": "tiktokshopwithlindsey",
+   "name": "Lindsey | Sips+More",
+   "gmv": 2959.5
+  },
+  {
+   "handle": "marie.social.shop",
+   "name": "MARIE",
+   "gmv": 2681.14
   },
   {
    "handle": "nikki.homestead",
    "name": "Nikki H",
-   "gmv": 1641.72
+   "gmv": 2391.84
   },
   {
    "handle": "markleblanc180",
    "name": "Mark LeBlanc TTS",
-   "gmv": 1606.18
+   "gmv": 2284.74
   },
   {
    "handle": "brandysfinds",
    "name": "Brandy",
-   "gmv": 1529.43
+   "gmv": 1665.62
   },
   {
    "handle": "mariashomestead",
    "name": "Maria",
-   "gmv": 1297.4
+   "gmv": 1338.39
+  },
+  {
+   "handle": ".tessers",
+   "name": "Tess",
+   "gmv": 1301.13
   },
   {
    "handle": "mandy_mae40",
@@ -100,9 +105,9 @@
    "gmv": 1159.42
   },
   {
-   "handle": ".tessers",
-   "name": "Tess",
-   "gmv": 1005.91
+   "handle": "davidlittle5",
+   "name": "David L. Frost",
+   "gmv": 1068.39
   },
   {
    "handle": "alexyszarra",
@@ -110,19 +115,19 @@
    "gmv": 647.65
   },
   {
-   "handle": "davidlittle5",
-   "name": "David L. Frost",
-   "gmv": 512.13
-  },
-  {
    "handle": "ashleyxyoung_",
    "name": "ASHLEY",
-   "gmv": 323.25
+   "gmv": 528.49
   },
   {
    "handle": "psujem00",
    "name": "Jaime Cy",
-   "gmv": 308.86
+   "gmv": 365.74
+  },
+  {
+   "handle": "macostac36",
+   "name": "Mayra",
+   "gmv": 296.61
   },
   {
    "handle": "studmuffin82",
@@ -130,9 +135,9 @@
    "gmv": 279.71
   },
   {
-   "handle": "macostac36",
-   "name": "Mayra",
-   "gmv": 205.14
+   "handle": ".mamacitaaa_",
+   "name": "mamacitaaa",
+   "gmv": 203.23
   },
   {
    "handle": "jillzjourney",
@@ -145,11 +150,6 @@
    "gmv": 140.32
   },
   {
-   "handle": ".mamacitaaa_",
-   "name": "mamacitaaa",
-   "gmv": 136.96
-  },
-  {
    "handle": "oakleyandwillowsmom",
    "name": "Oakley and Willows Mom",
    "gmv": 87.47
@@ -158,6 +158,11 @@
    "handle": "fabdboutique",
    "name": "FabD Boutique",
    "gmv": 79.98
+  },
+  {
+   "handle": "trissiebaby",
+   "name": "Trissie & the chaos crew",
+   "gmv": 59.98
   },
   {
    "handle": "pokedhd",
@@ -207,11 +212,6 @@
   {
    "handle": "cupofjo10",
    "name": "CupOfJo",
-   "gmv": 0.0
-  },
-  {
-   "handle": "trissiebaby",
-   "name": "Trissie & the chaos crew",
    "gmv": 0.0
   },
   {

@@ -92,6 +92,8 @@ def pull_month(token, start, end):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--month", default=datetime.date.today().strftime("%Y-%m"))
+    ap.add_argument("--force", action="store_true",
+                    help="write even if the monthly total went down")
     args = ap.parse_args()
 
     start, end = month_bounds(args.month)
@@ -118,7 +120,8 @@ def main():
         last_day = day if last_day is None else max(last_day, day)
 
     path = os.path.join(HERE, "data.json")
-    roster = [(r["handle"], r["name"]) for r in json.load(open(path))["rows"]]
+    prev = json.load(open(path))
+    roster = [(r["handle"], r["name"]) for r in prev["rows"]]
     rows = [{"handle": h, "name": n, "gmv": round(gmv.get(h, 0.0), 2)} for h, n in roster]
     rows.sort(key=lambda r: -r["gmv"])
 
@@ -132,10 +135,21 @@ def main():
         "source": "TikTok Shop live-session analytics",
         "rows": rows,
     }
+    total = sum(r["gmv"] for r in rows)
+    prev_total = sum(r["gmv"] for r in prev["rows"])
+
+    # Within one month GMV only accumulates. A drop means the pull is bad
+    # (partial paging, an API hiccup), and publishing it would wrongly demote
+    # sellers. A drop across a month boundary is just the reset.
+    if (not args.force and prev.get("period") == doc["period"]
+            and total < prev_total * 0.98):
+        sys.exit(f"refusing to write: {doc['period']} total fell from "
+                 f"${prev_total:,.0f} to ${total:,.0f}. The pull is likely "
+                 f"incomplete. Re-run, or pass --force if this is expected.")
+
     json.dump(doc, open(path, "w"), indent=1)
     subprocess.run([sys.executable, os.path.join(HERE, "build.py")], check=True)
 
-    total = sum(r["gmv"] for r in rows)
     print(f"month={args.month} sessions={len(sessions)} "
           f"coverage={doc['coverage']} tiktok_latest={latest}")
     print(f"total=${total:,.0f} gold={sum(1 for r in rows if r['gmv']>=30000)} "

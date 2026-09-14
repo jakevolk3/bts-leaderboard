@@ -1,7 +1,7 @@
 {
  "period": "September 2026",
- "coverage": "Sep 1 \u2013 Sep 13, 2026",
- "updated": "September 13, 2026",
+ "coverage": "Sep 1 \u2013 Sep 14, 2026",
+ "updated": "September 14, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "ashleygreen33": "Ashley Green",
@@ -12,20 +12,20 @@
   "sundaycanvasstudio": "Sunday",
   "lauren.boymom": "lauren-boymom",
   "yourfriend.reg": "Your Friend Regina",
+  "carrie_k": "carrie_k",
   "jamsgems23": "Jam's Gems",
   "montannagross": "Montanna Gross",
-  "carrie_k": "carrie_k",
   "dayna.kornau": "Dayna Kornau",
+  "jelesthandmade": "jelesthandmade",
   "nikki.homestead": "Nikki H",
   "marie.social.shop": "MARIE",
-  "jelesthandmade": "jelesthandmade",
   "tiktokshopwithlindsey": "Lindsey | Sips+More",
+  "mariashomestead": "Maria",
   "brandysfinds": "Brandy",
   "markleblanc180": "Mark LeBlanc TTS",
-  "mariashomestead": "Maria",
   "davidlittle5": "David L. Frost",
-  "mandy_mae40": "Mandy I Budget Minded SAHM",
   ".tessers": "Tess",
+  "mandy_mae40": "Mandy I Budget Minded SAHM",
   "ashleyxyoung_": "ASHLEY",
   ".mamacitaaa_": "mamacitaaa",
   "alexyszarra": "Alexys Zarra",
@@ -42,14 +42,16 @@
   "brookeastewart": "brookeastewart",
   "jillzjourney": "Jill",
   "brittyvibeshotmessmama": "brittyvibeshotmessmama",
-  "willemssc": "willemssc",
-  "___morgan.r___": "___morgan.r___",
   "luvbug71": "LisaXX",
   "water.you.sippin": "water.you.sippin",
-  "southerntiktokmama": "southerntiktokmama",
+  "willemssc": "willemssc",
+  "___morgan.r___": "___morgan.r___",
   "mylifeisahobby": "mylifeisahobby",
   "bluewatersnetwork": "bluewatersnetwork",
   "pattycharl3y": "pattycharl3y",
+  "house.to.shop": "house.to.shop",
+  "jennkat26": "jennkat26",
+  "southerntiktokmama": "southerntiktokmama",
   "vibezbyhaze": "vibezbyhaze",
   "ashcurvyfashion": "ashcurvyfashion",
   "kristyb.bags": "kristyb.bags",
@@ -62,7 +64,6 @@
   "digitalwithtrisha3": "digitalwithtrisha3",
   "the_tayos_life": "the_tayos_life",
   "simplypaigetrends": "simplypaigetrends",
-  "house.to.shop": "house.to.shop",
   "trissiebaby": "Trissie & the chaos crew",
   "pokedhd": "Pok\u00e9DHD",
   "thebaileydudley": "Bailey Dudley",
@@ -120,7 +121,7 @@
   {
    "handle": "ashleygreen33",
    "name": "Ashley Green",
-   "gmv": 28574.1
+   "gmv": 28376.61
   },
   {
    "handle": "janessahamdan",
@@ -130,32 +131,37 @@
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 18136.15
+   "gmv": 18633.0
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 14655.62
+   "gmv": 15036.29
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 13318.36
+   "gmv": 14905.58
   },
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 12706.63
+   "gmv": 13851.91
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 10663.45
+   "gmv": 11181.81
   },
   {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
-   "gmv": 8396.5
+   "gmv": 8682.85
+  },
+  {
+   "handle": "carrie_k",
+   "name": "carrie_k",
+   "gmv": 6563.83
   },
   {
    "handle": "jamsgems23",
@@ -165,42 +171,42 @@
   {
    "handle": "montannagross",
    "name": "Montanna Gross",
-   "gmv": 5866.46
-  },
-  {
-   "handle": "carrie_k",
-   "name": "carrie_k",
-   "gmv": 5821.93
+   "gmv": 6029.95
   },
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 5130.02
-  },
-  {
-   "handle": "nikki.homestead",
-   "name": "Nikki H",
-   "gmv": 4233.35
-  },
-  {
-   "handle": "marie.social.shop",
-   "name": "MARIE",
-   "gmv": 4042.15
+   "gmv": 5457.02
   },
   {
    "handle": "jelesthandmade",
    "name": "jelesthandmade",
-   "gmv": 3816.98
+   "gmv": 4444.49
+  },
+  {
+   "handle": "nikki.homestead",
+   "name": "Nikki H",
+   "gmv": 4337.87
+  },
+  {
+   "handle": "marie.social.shop",
+   "name": "MARIE",
+   "gmv": 4088.63
   },
   {
    "handle": "tiktokshopwithlindsey",
    "name": "Lindsey | Sips+More",
-   "gmv": 3442.23
+   "gmv": 3814.59
+  },
+  {
+   "handle": "mariashomestead",
+   "name": "Maria",
+   "gmv": 3284.54
   },
   {
    "handle": "brandysfinds",
    "name": "Brandy",
-   "gmv": 2882.33
+   "gmv": 2954.77
   },
   {
    "handle": "markleblanc180",
@@ -208,24 +214,19 @@
    "gmv": 2651.96
   },
   {
-   "handle": "mariashomestead",
-   "name": "Maria",
-   "gmv": 2573.61
-  },
-  {
    "handle": "davidlittle5",
    "name": "David L. Frost",
-   "gmv": 1944.66
+   "gmv": 2016.64
+  },
+  {
+   "handle": ".tessers",
+   "name": "Tess",
+   "gmv": 1873.56
   },
   {
    "handle": "mandy_mae40",
    "name": "Mandy I Budget Minded SAHM",
    "gmv": 1840.29
-  },
-  {
-   "handle": ".tessers",
-   "name": "Tess",
-   "gmv": 1833.57
   },
   {
    "handle": "ashleyxyoung_",
@@ -255,12 +256,12 @@
   {
    "handle": "psujem00",
    "name": "Jaime Cy",
-   "gmv": 403.98
+   "gmv": 503.15
   },
   {
    "handle": "theamandagray",
    "name": "theamandagray",
-   "gmv": 358.59
+   "gmv": 421.91
   },
   {
    "handle": "shopbluewaters",
@@ -308,6 +309,16 @@
    "gmv": 215.15
   },
   {
+   "handle": "luvbug71",
+   "name": "LisaXX",
+   "gmv": 197.07
+  },
+  {
+   "handle": "water.you.sippin",
+   "name": "water.you.sippin",
+   "gmv": 181.36
+  },
+  {
    "handle": "willemssc",
    "name": "willemssc",
    "gmv": 172.48
@@ -316,21 +327,6 @@
    "handle": "___morgan.r___",
    "name": "___morgan.r___",
    "gmv": 170.06
-  },
-  {
-   "handle": "luvbug71",
-   "name": "LisaXX",
-   "gmv": 167.08
-  },
-  {
-   "handle": "water.you.sippin",
-   "name": "water.you.sippin",
-   "gmv": 157.53
-  },
-  {
-   "handle": "southerntiktokmama",
-   "name": "southerntiktokmama",
-   "gmv": 155.87
   },
   {
    "handle": "mylifeisahobby",
@@ -348,6 +344,21 @@
    "gmv": 146.96
   },
   {
+   "handle": "house.to.shop",
+   "name": "house.to.shop",
+   "gmv": 142.17
+  },
+  {
+   "handle": "jennkat26",
+   "name": "jennkat26",
+   "gmv": 123.47
+  },
+  {
+   "handle": "southerntiktokmama",
+   "name": "southerntiktokmama",
+   "gmv": 122.83
+  },
+  {
    "handle": "vibezbyhaze",
    "name": "vibezbyhaze",
    "gmv": 122.82
@@ -356,16 +367,6 @@
    "handle": "ashcurvyfashion",
    "name": "ashcurvyfashion",
    "gmv": 114.13
-  },
-  {
-   "handle": "kristyb.bags",
-   "name": "kristyb.bags",
-   "gmv": 111.94
-  },
-  {
-   "handle": "blittle16",
-   "name": "blittle16",
-   "gmv": 103.05
   }
  ]
 }

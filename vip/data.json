@@ -1,14 +1,14 @@
 {
  "period": "September 2026",
- "coverage": "Sep 1 \u2013 Sep 15, 2026",
- "updated": "September 15, 2026",
+ "coverage": "Sep 1 \u2013 Sep 16, 2026",
+ "updated": "September 16, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "ashleygreen33": "Ashley Green",
   "jenniferlong76": "Jennifer Long",
   "janessahamdan": "Janessa Shop My Finds",
-  "hustlepapapaul": "Hustle Papa Paul",
   "tiffany.the10amclub": "Tiffany \u2022 Life Over 40",
+  "hustlepapapaul": "Hustle Papa Paul",
   "sundaycanvasstudio": "Sunday",
   "lauren.boymom": "lauren-boymom",
   "yourfriend.reg": "Your Friend Regina",
@@ -20,8 +20,8 @@
   "nikki.homestead": "Nikki H",
   "tiktokshopwithlindsey": "Lindsey | Sips+More",
   "marie.social.shop": "MARIE",
-  "mariashomestead": "Maria",
   "brandysfinds": "Brandy",
+  "mariashomestead": "Maria",
   "markleblanc180": "Mark LeBlanc TTS",
   "mandy_mae40": "Mandy I Budget Minded SAHM",
   ".tessers": "Tess",
@@ -53,6 +53,7 @@
   "pattycharl3y": "pattycharl3y",
   "house.to.shop": "house.to.shop",
   "kristyb.bags": "kristyb.bags",
+  "mom_fletcher": "mom_fletcher",
   "vibezbyhaze": "vibezbyhaze",
   "ashcurvyfashion": "ashcurvyfashion",
   "blittle16": "blittle16",
@@ -121,32 +122,32 @@
   {
    "handle": "ashleygreen33",
    "name": "Ashley Green",
-   "gmv": 35362.33
+   "gmv": 35222.96
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 20335.62
+   "gmv": 22086.76
   },
   {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 20239.57
-  },
-  {
-   "handle": "hustlepapapaul",
-   "name": "Hustle Papa Paul",
-   "gmv": 16337.82
+   "gmv": 20282.66
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 16178.78
+   "gmv": 18051.96
+  },
+  {
+   "handle": "hustlepapapaul",
+   "name": "Hustle Papa Paul",
+   "gmv": 16543.53
   },
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 14704.48
+   "gmv": 15191.17
   },
   {
    "handle": "lauren.boymom",
@@ -156,12 +157,12 @@
   {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
-   "gmv": 9420.31
+   "gmv": 9454.3
   },
   {
    "handle": "carrie_k",
    "name": "carrie_k",
-   "gmv": 6998.13
+   "gmv": 7319.16
   },
   {
    "handle": "jamsgems23",
@@ -171,27 +172,27 @@
   {
    "handle": "montannagross",
    "name": "Montanna Gross",
-   "gmv": 6176.58
+   "gmv": 6243.56
   },
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 5775.64
+   "gmv": 6000.93
   },
   {
    "handle": "jelesthandmade",
    "name": "jelesthandmade",
-   "gmv": 4907.63
+   "gmv": 5002.21
   },
   {
    "handle": "nikki.homestead",
    "name": "Nikki H",
-   "gmv": 4412.91
+   "gmv": 4910.5
   },
   {
    "handle": "tiktokshopwithlindsey",
    "name": "Lindsey | Sips+More",
-   "gmv": 4220.61
+   "gmv": 4144.13
   },
   {
    "handle": "marie.social.shop",
@@ -199,44 +200,44 @@
    "gmv": 4114.82
   },
   {
-   "handle": "mariashomestead",
-   "name": "Maria",
-   "gmv": 3458.47
-  },
-  {
    "handle": "brandysfinds",
    "name": "Brandy",
-   "gmv": 2987.17
+   "gmv": 3672.31
+  },
+  {
+   "handle": "mariashomestead",
+   "name": "Maria",
+   "gmv": 3607.42
   },
   {
    "handle": "markleblanc180",
    "name": "Mark LeBlanc TTS",
-   "gmv": 2917.4
+   "gmv": 2990.63
   },
   {
    "handle": "mandy_mae40",
    "name": "Mandy I Budget Minded SAHM",
-   "gmv": 2156.99
+   "gmv": 2573.6
   },
   {
    "handle": ".tessers",
    "name": "Tess",
-   "gmv": 2121.99
+   "gmv": 2534.27
   },
   {
    "handle": "davidlittle5",
    "name": "David L. Frost",
-   "gmv": 2108.33
+   "gmv": 2338.3
   },
   {
    "handle": "ashleyxyoung_",
    "name": "ASHLEY",
-   "gmv": 1653.42
+   "gmv": 1907.31
   },
   {
    "handle": ".mamacitaaa_",
    "name": "mamacitaaa",
-   "gmv": 693.55
+   "gmv": 720.55
   },
   {
    "handle": "alexyszarra",
@@ -246,7 +247,7 @@
   {
    "handle": "hernandezfinds88",
    "name": "hernandezfinds88",
-   "gmv": 620.67
+   "gmv": 594.68
   },
   {
    "handle": "macostac36",
@@ -364,9 +365,9 @@
    "gmv": 139.93
   },
   {
-   "handle": "vibezbyhaze",
-   "name": "vibezbyhaze",
-   "gmv": 122.82
+   "handle": "mom_fletcher",
+   "name": "mom_fletcher",
+   "gmv": 129.11
   }
  ]
 }

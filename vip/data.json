@@ -1,7 +1,7 @@
 {
  "period": "September 2026",
- "coverage": "Sep 1 \u2013 Sep 28, 2026",
- "updated": "September 28, 2026",
+ "coverage": "Sep 1 \u2013 Sep 29, 2026",
+ "updated": "September 29, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "ashleygreen33": "Ashley Green",
@@ -30,13 +30,13 @@
   "davidlittle5": "David L. Frost",
   "melissaander871": "melissaander871",
   ".mamacitaaa_": "mamacitaaa",
-  "mrsedwards2020": "mrsedwards2020",
   "glowgetter2.0": "JoyfulJourney",
+  "mrsedwards2020": "mrsedwards2020",
   "theamandagray": "theamandagray",
   "macostac36": "Mayra",
   "psujem00": "Jaime Cy",
-  "hernandezfinds88": "hernandezfinds88",
   "ttswithchristina": "ttswithchristina",
+  "hernandezfinds88": "hernandezfinds88",
   "alexyszarra": "Alexys Zarra",
   "studmuffin82": "CEO of MUFFINS",
   "beautyfindsandfavs": "beautyfindsandfavs",
@@ -136,27 +136,27 @@
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 33686.86
+   "gmv": 34187.4
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 28640.56
+   "gmv": 29301.45
   },
   {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 27246.81
+   "gmv": 27338.17
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 23663.25
+   "gmv": 23787.69
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 22084.43
+   "gmv": 22125.01
   },
   {
    "handle": "sundaycanvasstudio",
@@ -166,47 +166,47 @@
   {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
-   "gmv": 13849.66
+   "gmv": 13870.65
   },
   {
    "handle": "carrie_k",
    "name": "carrie_k",
-   "gmv": 13158.96
+   "gmv": 13183.29
   },
   {
    "handle": "jelesthandmade",
    "name": "jelesthandmade",
-   "gmv": 11217.34
+   "gmv": 11521.15
   },
   {
    "handle": "montannagross",
    "name": "Montanna Gross",
-   "gmv": 10806.31
+   "gmv": 10860.19
   },
   {
    "handle": "jamsgems23",
    "name": "Jam's Gems",
-   "gmv": 10690.05
+   "gmv": 10715.5
   },
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 8925.82
+   "gmv": 9079.4
   },
   {
    "handle": "mandy_mae40",
    "name": "Mandy I Budget Minded SAHM",
-   "gmv": 8865.23
+   "gmv": 8955.34
   },
   {
    "handle": "nikki.homestead",
    "name": "Nikki H",
-   "gmv": 7504.28
+   "gmv": 7544.27
   },
   {
    "handle": "marie.social.shop",
    "name": "MARIE",
-   "gmv": 7259.28
+   "gmv": 7258.4
   },
   {
    "handle": "ashleyxyoung_",
@@ -216,7 +216,7 @@
   {
    "handle": "tiktokshopwithlindsey",
    "name": "Lindsey | Sips+More",
-   "gmv": 5833.35
+   "gmv": 5890.92
   },
   {
    "handle": "brandysfinds",
@@ -226,12 +226,12 @@
   {
    "handle": "mariashomestead",
    "name": "Maria",
-   "gmv": 5436.45
+   "gmv": 5476.94
   },
   {
    "handle": ".tessers",
    "name": "Tess",
-   "gmv": 5251.93
+   "gmv": 5270.82
   },
   {
    "handle": "markleblanc180",
@@ -241,17 +241,17 @@
   {
    "handle": "digitalwithtrisha3",
    "name": "digitalwithtrisha3",
-   "gmv": 4912.93
+   "gmv": 5001.04
   },
   {
    "handle": "davidlittle5",
    "name": "David L. Frost",
-   "gmv": 3751.11
+   "gmv": 3947.05
   },
   {
    "handle": "melissaander871",
    "name": "melissaander871",
-   "gmv": 3487.81
+   "gmv": 3504.0
   },
   {
    "handle": ".mamacitaaa_",
@@ -259,14 +259,14 @@
    "gmv": 1151.54
   },
   {
+   "handle": "glowgetter2.0",
+   "name": "JoyfulJourney",
+   "gmv": 896.04
+  },
+  {
    "handle": "mrsedwards2020",
    "name": "mrsedwards2020",
    "gmv": 891.65
-  },
-  {
-   "handle": "glowgetter2.0",
-   "name": "JoyfulJourney",
-   "gmv": 889.23
   },
   {
    "handle": "theamandagray",
@@ -284,19 +284,19 @@
    "gmv": 758.02
   },
   {
+   "handle": "ttswithchristina",
+   "name": "ttswithchristina",
+   "gmv": 752.78
+  },
+  {
    "handle": "hernandezfinds88",
    "name": "hernandezfinds88",
    "gmv": 728.5
   },
   {
-   "handle": "ttswithchristina",
-   "name": "ttswithchristina",
-   "gmv": 716.79
-  },
-  {
    "handle": "alexyszarra",
    "name": "Alexys Zarra",
-   "gmv": 647.65
+   "gmv": 680.64
   },
   {
    "handle": "studmuffin82",

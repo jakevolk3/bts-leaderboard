@@ -1,57 +1,61 @@
 {
  "period": "October 2026",
- "coverage": "Oct 1 \u2013 Oct 7, 2026",
- "updated": "October 7, 2026",
+ "coverage": "Oct 1 \u2013 Oct 8, 2026",
+ "updated": "October 8, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "sundaycanvasstudio": "Sunday",
   "hustlepapapaul": "Hustle Papa Paul",
   "tiffany.the10amclub": "Tiffany \u2022 Life Over 40",
+  "jenniferlong76": "Jennifer Long",
   "jelesthandmade": "jelesthandmade",
   "janessahamdan": "Janessa Shop My Finds",
-  "jenniferlong76": "Jennifer Long",
-  "mandy_mae40": "Mandy I Budget Minded SAHM",
-  "lauren.boymom": "lauren-boymom",
   "ashleygreen33": "Ashley Green",
+  "lauren.boymom": "lauren-boymom",
+  "mandy_mae40": "Mandy I Budget Minded SAHM",
+  "glowgetter2.0": "JoyfulJourney",
   "melissaander871": "melissaander871",
   "marie.social.shop": "MARIE",
-  "nikki.homestead": "Nikki H",
-  "glowgetter2.0": "JoyfulJourney",
   "yourfriend.reg": "Your Friend Regina",
+  "nikki.homestead": "Nikki H",
   "carrie_k": "carrie_k",
   "jamtime23": "jamtime23",
   "ashleyxyoung_": "ASHLEY",
   "dayna.kornau": "Dayna Kornau",
   "tiktokshopwithlindsey": "Lindsey | Sips+More",
+  "davidlittle5": "David L. Frost",
   "mrsedwards2020": "mrsedwards2020",
   "danimorgansboutique": "danimorgansboutique",
   "psujem00": "Jaime Cy",
-  "davidlittle5": "David L. Frost",
   "montannagross": "Montanna Gross",
   "only_the_good_stuff_here": "only_the_good_stuff_here",
-  ".mamacitaaa_": "mamacitaaa",
   "godsgirl_danielle": "godsgirl_danielle",
   "markleblanc180": "Mark LeBlanc TTS",
-  "coleman24c": "coleman24c",
   "ttswithchristina": "ttswithchristina",
+  "coleman24c": "coleman24c",
+  ".tessers": "Tess",
   "fabdboutique": "FabD Boutique",
   "house.to.shop": "house.to.shop",
+  "mariashomestead": "Maria",
   "lifevibesrach": "lifevibesrach",
   "jthecreativequeen": "jthecreativequeen",
   "jennkat26": "jennkat26",
-  "water.you.sippin": "water.you.sippin",
-  ".tessers": "Tess",
   "boujeeonabudgetfinds_": "boujeeonabudgetfinds_",
   "brandysfinds": "Brandy",
   "sassdbyseal": "sassdbyseal",
+  "luvbug71": "LisaXX",
   "kaleighess": "kaleighess",
   "things_athome": "things_athome",
-  "luvbug71": "LisaXX",
   "inspirationwink": "inspirationwink",
   "oakleyandwillowsmom": "Oakley and Willows Mom",
+  "dailyfindsbyerica": "dailyfindsbyerica",
   "heeeyquin": "heeeyquin",
   "susan.on.beauty": "susan.on.beauty",
   "queenmaexo3": "queenmaexo3",
+  "meriahgibson": "meriahgibson",
+  "sickinsanity": "sickinsanity",
+  ".mamacitaaa_": "mamacitaaa",
+  "water.you.sippin": "water.you.sippin",
   "mamaacrylics01": "mamaacrylics01",
   "shopthecozyedit": "shopthecozyedit",
   "macostac36": "Mayra",
@@ -67,7 +71,6 @@
   "chicken..mom": "chicken..mom",
   "f100feller": "f100feller",
   "thisislaurenelise": "thisislaurenelise",
-  "mariashomestead": "Maria",
   "digitalwithtrisha3": "digitalwithtrisha3",
   "theamandagray": "theamandagray",
   "hernandezfinds88": "hernandezfinds88",
@@ -155,97 +158,102 @@
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 4223.21
+   "gmv": 4394.18
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 3602.37
+   "gmv": 3840.42
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 3103.39
-  },
-  {
-   "handle": "jelesthandmade",
-   "name": "jelesthandmade",
-   "gmv": 2900.34
-  },
-  {
-   "handle": "janessahamdan",
-   "name": "Janessa Shop My Finds",
-   "gmv": 2762.97
+   "gmv": 3616.04
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 2265.58
+   "gmv": 3183.86
   },
   {
-   "handle": "mandy_mae40",
-   "name": "Mandy I Budget Minded SAHM",
-   "gmv": 2070.98
+   "handle": "jelesthandmade",
+   "name": "jelesthandmade",
+   "gmv": 3003.85
   },
   {
-   "handle": "lauren.boymom",
-   "name": "lauren-boymom",
-   "gmv": 2064.0
+   "handle": "janessahamdan",
+   "name": "Janessa Shop My Finds",
+   "gmv": 2872.9
   },
   {
    "handle": "ashleygreen33",
    "name": "Ashley Green",
-   "gmv": 2057.34
+   "gmv": 2692.22
   },
   {
-   "handle": "melissaander871",
-   "name": "melissaander871",
-   "gmv": 1992.34
+   "handle": "lauren.boymom",
+   "name": "lauren-boymom",
+   "gmv": 2642.69
   },
   {
-   "handle": "marie.social.shop",
-   "name": "MARIE",
-   "gmv": 1650.7
-  },
-  {
-   "handle": "nikki.homestead",
-   "name": "Nikki H",
-   "gmv": 1598.91
+   "handle": "mandy_mae40",
+   "name": "Mandy I Budget Minded SAHM",
+   "gmv": 2146.11
   },
   {
    "handle": "glowgetter2.0",
    "name": "JoyfulJourney",
-   "gmv": 1577.91
+   "gmv": 2062.1
+  },
+  {
+   "handle": "melissaander871",
+   "name": "melissaander871",
+   "gmv": 2049.11
+  },
+  {
+   "handle": "marie.social.shop",
+   "name": "MARIE",
+   "gmv": 1827.94
   },
   {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
-   "gmv": 1318.8
+   "gmv": 1793.13
+  },
+  {
+   "handle": "nikki.homestead",
+   "name": "Nikki H",
+   "gmv": 1734.53
   },
   {
    "handle": "carrie_k",
    "name": "carrie_k",
-   "gmv": 1282.03
+   "gmv": 1436.12
   },
   {
    "handle": "jamtime23",
    "name": "jamtime23",
-   "gmv": 1166.24
+   "gmv": 1215.72
   },
   {
    "handle": "ashleyxyoung_",
    "name": "ASHLEY",
-   "gmv": 1075.96
+   "gmv": 1149.44
   },
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 992.52
+   "gmv": 1046.37
   },
   {
    "handle": "tiktokshopwithlindsey",
    "name": "Lindsey | Sips+More",
    "gmv": 744.38
+  },
+  {
+   "handle": "davidlittle5",
+   "name": "David L. Frost",
+   "gmv": 740.62
   },
   {
    "handle": "mrsedwards2020",
@@ -255,17 +263,12 @@
   {
    "handle": "danimorgansboutique",
    "name": "danimorgansboutique",
-   "gmv": 479.97
+   "gmv": 506.14
   },
   {
    "handle": "psujem00",
    "name": "Jaime Cy",
    "gmv": 476.17
-  },
-  {
-   "handle": "davidlittle5",
-   "name": "David L. Frost",
-   "gmv": 453.86
   },
   {
    "handle": "montannagross",
@@ -278,11 +281,6 @@
    "gmv": 388.52
   },
   {
-   "handle": ".mamacitaaa_",
-   "name": "mamacitaaa",
-   "gmv": 335.25
-  },
-  {
    "handle": "godsgirl_danielle",
    "name": "godsgirl_danielle",
    "gmv": 322.64
@@ -290,7 +288,12 @@
   {
    "handle": "markleblanc180",
    "name": "Mark LeBlanc TTS",
-   "gmv": 243.31
+   "gmv": 303.79
+  },
+  {
+   "handle": "ttswithchristina",
+   "name": "ttswithchristina",
+   "gmv": 257.22
   },
   {
    "handle": "coleman24c",
@@ -298,9 +301,9 @@
    "gmv": 228.43
   },
   {
-   "handle": "ttswithchristina",
-   "name": "ttswithchristina",
-   "gmv": 218.1
+   "handle": ".tessers",
+   "name": "Tess",
+   "gmv": 227.56
   },
   {
    "handle": "fabdboutique",
@@ -311,6 +314,11 @@
    "handle": "house.to.shop",
    "name": "house.to.shop",
    "gmv": 155.76
+  },
+  {
+   "handle": "mariashomestead",
+   "name": "Maria",
+   "gmv": 145.22
   },
   {
    "handle": "lifevibesrach",
@@ -328,16 +336,6 @@
    "gmv": 120.53
   },
   {
-   "handle": "water.you.sippin",
-   "name": "water.you.sippin",
-   "gmv": 112.16
-  },
-  {
-   "handle": ".tessers",
-   "name": "Tess",
-   "gmv": 107.6
-  },
-  {
    "handle": "boujeeonabudgetfinds_",
    "name": "boujeeonabudgetfinds_",
    "gmv": 96.37
@@ -353,6 +351,11 @@
    "gmv": 78.36
   },
   {
+   "handle": "luvbug71",
+   "name": "LisaXX",
+   "gmv": 77.19
+  },
+  {
    "handle": "kaleighess",
    "name": "kaleighess",
    "gmv": 73.97
@@ -363,11 +366,6 @@
    "gmv": 70.54
   },
   {
-   "handle": "luvbug71",
-   "name": "LisaXX",
-   "gmv": 67.54
-  },
-  {
    "handle": "inspirationwink",
    "name": "inspirationwink",
    "gmv": 51.83
@@ -376,6 +374,11 @@
    "handle": "oakleyandwillowsmom",
    "name": "Oakley and Willows Mom",
    "gmv": 46.78
+  },
+  {
+   "handle": "dailyfindsbyerica",
+   "name": "dailyfindsbyerica",
+   "gmv": 46.77
   },
   {
    "handle": "heeeyquin",
@@ -393,14 +396,14 @@
    "gmv": 44.99
   },
   {
-   "handle": "mamaacrylics01",
-   "name": "mamaacrylics01",
-   "gmv": 38.24
+   "handle": "meriahgibson",
+   "name": "meriahgibson",
+   "gmv": 44.99
   },
   {
-   "handle": "shopthecozyedit",
-   "name": "shopthecozyedit",
-   "gmv": 36.94
+   "handle": "sickinsanity",
+   "name": "sickinsanity",
+   "gmv": 38.53
   }
  ]
 }

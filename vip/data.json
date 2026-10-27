@@ -1,7 +1,7 @@
 {
  "period": "October 2026",
- "coverage": "Oct 1 \u2013 Oct 26, 2026",
- "updated": "October 26, 2026",
+ "coverage": "Oct 1 \u2013 Oct 27, 2026",
+ "updated": "October 27, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "janessahamdan": "Janessa Shop My Finds",
@@ -13,17 +13,17 @@
   "ashleyslivefinds": "ashleyslivefinds",
   "glowgetter2.0": "JoyfulJourney",
   "yourfriend.reg": "Your Friend Regina",
+  "tiktokshopwithlindsey": "Lindsey | Sips+More",
   "jelesthandmade": "jelesthandmade",
   "nikki.homestead": "Nikki H",
-  "tiktokshopwithlindsey": "Lindsey | Sips+More",
   "marie.social.shop": "MARIE",
   "carrie_k": "carrie_k",
   "ashleyxyoung_": "ASHLEY",
   "melissaander871": "melissaander871",
   "mandy_mae40": "Mandy I Budget Minded SAHM",
   "jamtime23": "jamtime23",
-  "mariashomestead": "Maria",
   "dayna.kornau": "Dayna Kornau",
+  "mariashomestead": "Maria",
   "davidlittle5": "David L. Frost",
   ".tessers": "Tess",
   "markleblanc180": "Mark LeBlanc TTS",
@@ -33,10 +33,10 @@
   "danimorgansboutique": "danimorgansboutique",
   "psujem00": "Jaime Cy",
   "chef.rob_": "chef.rob_",
+  "trendystylesboutique": "trendystylesboutique",
   "only_the_good_stuff_here": "only_the_good_stuff_here",
   "studmuffin82": "CEO of MUFFINS",
   ".mamacitaaa_": "mamacitaaa",
-  "trendystylesboutique": "trendystylesboutique",
   "southerntiktokmama": "southerntiktokmama",
   "godsgirl_danielle": "godsgirl_danielle",
   "iamchristydilg": "iamchristydilg",
@@ -44,15 +44,17 @@
   "coleman24c": "coleman24c",
   "creative.prints.b6": "creative.prints.b6",
   "ttswithchristina": "ttswithchristina",
-  "fabdboutique": "FabD Boutique",
+  "fabdshops": "fabdshops",
   "simply_genna": "simply_genna",
   "positive.patricia": "positive.patricia",
   "things_athome": "things_athome",
   "house.to.shop": "house.to.shop",
+  "beautyfindsandfavs": "beautyfindsandfavs",
   "sassdbyseal": "sassdbyseal",
   "codynlindley": "codynlindley",
   "jessicajw7": "jessicajw7",
   "kristamichelletiktok": "kristamichelletiktok",
+  "fabdboutique": "FabD Boutique",
   "lifevibesrach": "lifevibesrach",
   "jthecreativequeen": "jthecreativequeen",
   "ashleygreen33": "Ashley Green",
@@ -66,7 +68,6 @@
   "jwilly78": "jwilly78",
   "macostac36": "Mayra",
   "kaleighess": "kaleighess",
-  "beautyfindsandfavs": "beautyfindsandfavs",
   "becomingme2025": "becomingme2025",
   "inspirationwink": "inspirationwink",
   "dailyfindsbyerica": "dailyfindsbyerica",
@@ -171,47 +172,52 @@
   {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 34111.01
+   "gmv": 34520.49
   },
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 30219.01
+   "gmv": 30886.7
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 28204.02
+   "gmv": 28781.79
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 20150.53
+   "gmv": 21354.08
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 18055.4
+   "gmv": 20440.6
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 14756.28
+   "gmv": 15496.12
   },
   {
    "handle": "ashleyslivefinds",
    "name": "ashleyslivefinds",
-   "gmv": 14461.5
+   "gmv": 14495.49
   },
   {
    "handle": "glowgetter2.0",
    "name": "JoyfulJourney",
-   "gmv": 13307.57
+   "gmv": 13736.04
   },
   {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
-   "gmv": 11756.38
+   "gmv": 12045.64
+  },
+  {
+   "handle": "tiktokshopwithlindsey",
+   "name": "Lindsey | Sips+More",
+   "gmv": 10503.87
   },
   {
    "handle": "jelesthandmade",
@@ -221,12 +227,7 @@
   {
    "handle": "nikki.homestead",
    "name": "Nikki H",
-   "gmv": 9931.95
-  },
-  {
-   "handle": "tiktokshopwithlindsey",
-   "name": "Lindsey | Sips+More",
-   "gmv": 9797.42
+   "gmv": 10084.42
   },
   {
    "handle": "marie.social.shop",
@@ -246,37 +247,37 @@
   {
    "handle": "melissaander871",
    "name": "melissaander871",
-   "gmv": 6523.22
+   "gmv": 6740.69
   },
   {
    "handle": "mandy_mae40",
    "name": "Mandy I Budget Minded SAHM",
-   "gmv": 5990.18
+   "gmv": 6342.26
   },
   {
    "handle": "jamtime23",
    "name": "jamtime23",
-   "gmv": 5160.03
-  },
-  {
-   "handle": "mariashomestead",
-   "name": "Maria",
-   "gmv": 4749.4
+   "gmv": 5225.13
   },
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 4516.83
+   "gmv": 4916.39
+  },
+  {
+   "handle": "mariashomestead",
+   "name": "Maria",
+   "gmv": 4839.62
   },
   {
    "handle": "davidlittle5",
    "name": "David L. Frost",
-   "gmv": 3484.91
+   "gmv": 3755.98
   },
   {
    "handle": ".tessers",
    "name": "Tess",
-   "gmv": 2595.59
+   "gmv": 2629.59
   },
   {
    "handle": "markleblanc180",
@@ -296,7 +297,7 @@
   {
    "handle": "brandysfinds",
    "name": "Brandy",
-   "gmv": 1218.57
+   "gmv": 1252.56
   },
   {
    "handle": "danimorgansboutique",
@@ -306,12 +307,17 @@
   {
    "handle": "psujem00",
    "name": "Jaime Cy",
-   "gmv": 514.41
+   "gmv": 546.85
   },
   {
    "handle": "chef.rob_",
    "name": "chef.rob_",
    "gmv": 486.28
+  },
+  {
+   "handle": "trendystylesboutique",
+   "name": "trendystylesboutique",
+   "gmv": 440.02
   },
   {
    "handle": "only_the_good_stuff_here",
@@ -327,11 +333,6 @@
    "handle": ".mamacitaaa_",
    "name": "mamacitaaa",
    "gmv": 406.63
-  },
-  {
-   "handle": "trendystylesboutique",
-   "name": "trendystylesboutique",
-   "gmv": 401.78
   },
   {
    "handle": "southerntiktokmama",
@@ -369,8 +370,8 @@
    "gmv": 257.22
   },
   {
-   "handle": "fabdboutique",
-   "name": "FabD Boutique",
+   "handle": "fabdshops",
+   "name": "fabdshops",
    "gmv": 195.92
   },
   {
@@ -394,6 +395,11 @@
    "gmv": 155.76
   },
   {
+   "handle": "beautyfindsandfavs",
+   "name": "beautyfindsandfavs",
+   "gmv": 150.35
+  },
+  {
    "handle": "sassdbyseal",
    "name": "sassdbyseal",
    "gmv": 141.33
@@ -412,11 +418,6 @@
    "handle": "kristamichelletiktok",
    "name": "kristamichelletiktok",
    "gmv": 130.09
-  },
-  {
-   "handle": "lifevibesrach",
-   "name": "lifevibesrach",
-   "gmv": 127.66
   }
  ]
 }

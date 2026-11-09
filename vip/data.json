@@ -1,27 +1,27 @@
 {
  "period": "November 2026",
- "coverage": "Nov 1 \u2013 Nov 8, 2026",
- "updated": "November 8, 2026",
+ "coverage": "Nov 1 \u2013 Nov 9, 2026",
+ "updated": "November 9, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "janessahamdan": "Janessa Shop My Finds",
   "tiffany.the10amclub": "Tiffany \u2022 Life Over 40",
-  "mandy_mae40": "Mandy I Budget Minded SAHM",
   "tiktokshopwithlindsey": "Lindsey | Sips+More",
-  "sundaycanvasstudio": "Sunday",
+  "mandy_mae40": "Mandy I Budget Minded SAHM",
   "ashleyslivefinds": "ashleyslivefinds",
+  "sundaycanvasstudio": "Sunday",
   "lauren.boymom": "lauren-boymom",
   "jenniferlong76": "Jennifer Long",
   "nikki.homestead": "Nikki H",
   "glowgetter2.0": "JoyfulJourney",
-  "carrie_k": "carrie_k",
   "hustlepapapaul": "Hustle Papa Paul",
-  "ashleyxyoung_": "ASHLEY",
+  "carrie_k": "carrie_k",
   "jelesthandmade": "jelesthandmade",
-  "marie.social.shop": "MARIE",
+  "ashleyxyoung_": "ASHLEY",
   "mariashomestead": "Maria",
-  "chef.rob_": "chef.rob_",
+  "marie.social.shop": "MARIE",
   "yourfriend.reg": "Your Friend Regina",
+  "chef.rob_": "chef.rob_",
   "markleblanc180": "Mark LeBlanc TTS",
   "jamtime23": "jamtime23",
   "studmuffin82": "CEO of MUFFINS",
@@ -31,23 +31,24 @@
   "brandysfinds": "Brandy",
   "montannagross": "Montanna Gross",
   "mrsedwards2020": "mrsedwards2020",
+  "abundleofchaos": "abundleofchaos",
   "adhdlandia": "adhdlandia",
   "thisislaurenelise": "thisislaurenelise",
-  "heartonhersleeve": "heartonhersleeve",
   "manda.8082": "manda.8082",
+  "heartonhersleeve": "heartonhersleeve",
   "momlifebiz": "momlifebiz",
   "iamsarahkramer": "iamsarahkramer",
   "luvbug71": "LisaXX",
   "sandra_shops": "sandra_shops",
   "brookeinbeta": "brookeinbeta",
-  "abundleofchaos": "abundleofchaos",
+  "yolie72675": "yolie72675",
   ".mamacitaaa_": "mamacitaaa",
   "lishmarie10": "lishmarie10",
   "court3y.ugc": "court3y.ugc",
   "chicken..mom": "chicken..mom",
   "digitalwithtrisha3": "digitalwithtrisha3",
-  "coleman24c": "coleman24c",
   "jengenxshop": "jengenxshop",
+  "coleman24c": "coleman24c",
   "ruru14620": "ruru14620",
   "homefindsbymakinbling": "homefindsbymakinbling",
   "blancafashionistalive": "blancafashionistalive",
@@ -198,62 +199,67 @@
   {
    "handle": "janessahamdan",
    "name": "Janessa Shop My Finds",
-   "gmv": 15699.62
+   "gmv": 16213.79
   },
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 14616.08
-  },
-  {
-   "handle": "mandy_mae40",
-   "name": "Mandy I Budget Minded SAHM",
-   "gmv": 10223.31
+   "gmv": 15573.49
   },
   {
    "handle": "tiktokshopwithlindsey",
    "name": "Lindsey | Sips+More",
-   "gmv": 10087.12
+   "gmv": 10341.86
   },
   {
-   "handle": "sundaycanvasstudio",
-   "name": "Sunday",
-   "gmv": 9049.64
+   "handle": "mandy_mae40",
+   "name": "Mandy I Budget Minded SAHM",
+   "gmv": 10247.63
   },
   {
    "handle": "ashleyslivefinds",
    "name": "ashleyslivefinds",
-   "gmv": 8372.44
+   "gmv": 9568.44
+  },
+  {
+   "handle": "sundaycanvasstudio",
+   "name": "Sunday",
+   "gmv": 9402.94
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 6782.68
+   "gmv": 7806.98
   },
   {
    "handle": "jenniferlong76",
    "name": "Jennifer Long",
-   "gmv": 6443.47
+   "gmv": 7510.18
   },
   {
    "handle": "nikki.homestead",
    "name": "Nikki H",
-   "gmv": 4168.15
+   "gmv": 4569.8
   },
   {
    "handle": "glowgetter2.0",
    "name": "JoyfulJourney",
-   "gmv": 4129.96
-  },
-  {
-   "handle": "carrie_k",
-   "name": "carrie_k",
-   "gmv": 3654.94
+   "gmv": 4408.24
   },
   {
    "handle": "hustlepapapaul",
    "name": "Hustle Papa Paul",
-   "gmv": 3639.74
+   "gmv": 3857.94
+  },
+  {
+   "handle": "carrie_k",
+   "name": "carrie_k",
+   "gmv": 3777.9
+  },
+  {
+   "handle": "jelesthandmade",
+   "name": "jelesthandmade",
+   "gmv": 3532.36
   },
   {
    "handle": "ashleyxyoung_",
@@ -261,9 +267,9 @@
    "gmv": 3477.25
   },
   {
-   "handle": "jelesthandmade",
-   "name": "jelesthandmade",
-   "gmv": 3221.45
+   "handle": "mariashomestead",
+   "name": "Maria",
+   "gmv": 2644.34
   },
   {
    "handle": "marie.social.shop",
@@ -271,19 +277,14 @@
    "gmv": 2419.93
   },
   {
-   "handle": "mariashomestead",
-   "name": "Maria",
-   "gmv": 2335.4
+   "handle": "yourfriend.reg",
+   "name": "Your Friend Regina",
+   "gmv": 1957.67
   },
   {
    "handle": "chef.rob_",
    "name": "chef.rob_",
-   "gmv": 1911.4
-  },
-  {
-   "handle": "yourfriend.reg",
-   "name": "Your Friend Regina",
-   "gmv": 1883.44
+   "gmv": 1936.86
   },
   {
    "handle": "markleblanc180",
@@ -308,7 +309,7 @@
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 834.27
+   "gmv": 921.51
   },
   {
    "handle": "davidlittle5",
@@ -328,7 +329,12 @@
   {
    "handle": "mrsedwards2020",
    "name": "mrsedwards2020",
-   "gmv": 445.39
+   "gmv": 471.38
+  },
+  {
+   "handle": "abundleofchaos",
+   "name": "abundleofchaos",
+   "gmv": 429.1
   },
   {
    "handle": "adhdlandia",
@@ -341,14 +347,14 @@
    "gmv": 355.41
   },
   {
+   "handle": "manda.8082",
+   "name": "manda.8082",
+   "gmv": 288.37
+  },
+  {
    "handle": "heartonhersleeve",
    "name": "heartonhersleeve",
    "gmv": 282.42
-  },
-  {
-   "handle": "manda.8082",
-   "name": "manda.8082",
-   "gmv": 245.19
   },
   {
    "handle": "momlifebiz",
@@ -376,9 +382,9 @@
    "gmv": 157.95
   },
   {
-   "handle": "abundleofchaos",
-   "name": "abundleofchaos",
-   "gmv": 145.49
+   "handle": "yolie72675",
+   "name": "yolie72675",
+   "gmv": 152.96
   },
   {
    "handle": ".mamacitaaa_",
@@ -403,17 +409,17 @@
   {
    "handle": "digitalwithtrisha3",
    "name": "digitalwithtrisha3",
-   "gmv": 103.48
+   "gmv": 110.67
+  },
+  {
+   "handle": "jengenxshop",
+   "name": "jengenxshop",
+   "gmv": 98.05
   },
   {
    "handle": "coleman24c",
    "name": "coleman24c",
    "gmv": 92.69
-  },
-  {
-   "handle": "jengenxshop",
-   "name": "jengenxshop",
-   "gmv": 92.52
   },
   {
    "handle": "ruru14620",
@@ -438,11 +444,6 @@
   {
    "handle": "skgot5onit",
    "name": "skgot5onit",
-   "gmv": 71.98
-  },
-  {
-   "handle": "kerri.all.things",
-   "name": "kerri.all.things",
    "gmv": 71.98
   }
  ]

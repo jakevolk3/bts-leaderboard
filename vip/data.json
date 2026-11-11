@@ -1,7 +1,7 @@
 {
  "period": "November 2026",
- "coverage": "Nov 1 \u2013 Nov 10, 2026",
- "updated": "November 10, 2026",
+ "coverage": "Nov 1 \u2013 Nov 11, 2026",
+ "updated": "November 11, 2026",
  "source": "TikTok Shop live-session analytics",
  "names": {
   "janessahamdan": "Janessa Shop My Finds",
@@ -14,14 +14,14 @@
   "jenniferlong76": "Jennifer Long",
   "nikki.homestead": "Nikki H",
   "glowgetter2.0": "JoyfulJourney",
+  "jelesthandmade": "jelesthandmade",
   "hustlepapapaul": "Hustle Papa Paul",
   "carrie_k": "carrie_k",
-  "jelesthandmade": "jelesthandmade",
   "ashleyxyoung_": "ASHLEY",
   "mariashomestead": "Maria",
   "marie.social.shop": "MARIE",
-  "yourfriend.reg": "Your Friend Regina",
   "chef.rob_": "chef.rob_",
+  "yourfriend.reg": "Your Friend Regina",
   "markleblanc180": "Mark LeBlanc TTS",
   "jamtime23": "jamtime23",
   "studmuffin82": "CEO of MUFFINS",
@@ -34,11 +34,11 @@
   "abundleofchaos": "abundleofchaos",
   "thisislaurenelise": "thisislaurenelise",
   "adhdlandia": "adhdlandia",
-  "manda.8082": "manda.8082",
   "heartonhersleeve": "heartonhersleeve",
+  "manda.8082": "manda.8082",
   "momlifebiz": "momlifebiz",
-  "luvbug71": "LisaXX",
   "iamsarahkramer": "iamsarahkramer",
+  "luvbug71": "LisaXX",
   "sandra_shops": "sandra_shops",
   "lishmarie10": "lishmarie10",
   "brookeinbeta": "brookeinbeta",
@@ -47,6 +47,7 @@
   "court3y.ugc": "court3y.ugc",
   "chicken..mom": "chicken..mom",
   "digitalwithtrisha3": "digitalwithtrisha3",
+  "psujem00": "Jaime Cy",
   "jengenxshop": "jengenxshop",
   "coleman24c": "coleman24c",
   "ruru14620": "ruru14620",
@@ -59,7 +60,6 @@
   "tteverydayfinds": "tteverydayfinds",
   "disturbriana": "disturbriana",
   "vibezbyhaze": "vibezbyhaze",
-  "psujem00": "Jaime Cy",
   "alldaymomof3": "alldaymomof3",
   "shopthecozyedit": "shopthecozyedit",
   "becomingme2025": "becomingme2025",
@@ -204,7 +204,7 @@
   {
    "handle": "tiffany.the10amclub",
    "name": "Tiffany \u2022 Life Over 40",
-   "gmv": 15775.57
+   "gmv": 15892.57
   },
   {
    "handle": "tiktokshopwithlindsey",
@@ -214,7 +214,7 @@
   {
    "handle": "mandy_mae40",
    "name": "Mandy I Budget Minded SAHM",
-   "gmv": 10247.63
+   "gmv": 10315.47
   },
   {
    "handle": "ashleyslivefinds",
@@ -224,12 +224,12 @@
   {
    "handle": "sundaycanvasstudio",
    "name": "Sunday",
-   "gmv": 9361.04
+   "gmv": 9487.92
   },
   {
    "handle": "lauren.boymom",
    "name": "lauren-boymom",
-   "gmv": 7840.08
+   "gmv": 7886.1
   },
   {
    "handle": "jenniferlong76",
@@ -239,12 +239,17 @@
   {
    "handle": "nikki.homestead",
    "name": "Nikki H",
-   "gmv": 4569.8
+   "gmv": 4628.34
   },
   {
    "handle": "glowgetter2.0",
    "name": "JoyfulJourney",
    "gmv": 4408.24
+  },
+  {
+   "handle": "jelesthandmade",
+   "name": "jelesthandmade",
+   "gmv": 3883.31
   },
   {
    "handle": "hustlepapapaul",
@@ -257,11 +262,6 @@
    "gmv": 3857.91
   },
   {
-   "handle": "jelesthandmade",
-   "name": "jelesthandmade",
-   "gmv": 3753.34
-  },
-  {
    "handle": "ashleyxyoung_",
    "name": "ASHLEY",
    "gmv": 3477.25
@@ -269,7 +269,7 @@
   {
    "handle": "mariashomestead",
    "name": "Maria",
-   "gmv": 2644.34
+   "gmv": 2660.32
   },
   {
    "handle": "marie.social.shop",
@@ -277,19 +277,19 @@
    "gmv": 2419.93
   },
   {
+   "handle": "chef.rob_",
+   "name": "chef.rob_",
+   "gmv": 1966.85
+  },
+  {
    "handle": "yourfriend.reg",
    "name": "Your Friend Regina",
    "gmv": 1957.67
   },
   {
-   "handle": "chef.rob_",
-   "name": "chef.rob_",
-   "gmv": 1936.86
-  },
-  {
    "handle": "markleblanc180",
    "name": "Mark LeBlanc TTS",
-   "gmv": 1786.88
+   "gmv": 1955.8
   },
   {
    "handle": "jamtime23",
@@ -309,7 +309,7 @@
   {
    "handle": "dayna.kornau",
    "name": "Dayna Kornau",
-   "gmv": 850.25
+   "gmv": 921.51
   },
   {
    "handle": "davidlittle5",
@@ -334,7 +334,7 @@
   {
    "handle": "abundleofchaos",
    "name": "abundleofchaos",
-   "gmv": 466.46
+   "gmv": 462.09
   },
   {
    "handle": "thisislaurenelise",
@@ -347,14 +347,14 @@
    "gmv": 397.9
   },
   {
+   "handle": "heartonhersleeve",
+   "name": "heartonhersleeve",
+   "gmv": 319.66
+  },
+  {
    "handle": "manda.8082",
    "name": "manda.8082",
    "gmv": 288.37
-  },
-  {
-   "handle": "heartonhersleeve",
-   "name": "heartonhersleeve",
-   "gmv": 282.42
   },
   {
    "handle": "momlifebiz",
@@ -362,14 +362,14 @@
    "gmv": 217.94
   },
   {
-   "handle": "luvbug71",
-   "name": "LisaXX",
-   "gmv": 213.45
-  },
-  {
    "handle": "iamsarahkramer",
    "name": "iamsarahkramer",
    "gmv": 207.95
+  },
+  {
+   "handle": "luvbug71",
+   "name": "LisaXX",
+   "gmv": 200.47
   },
   {
    "handle": "sandra_shops",
@@ -412,6 +412,11 @@
    "gmv": 110.67
   },
   {
+   "handle": "psujem00",
+   "name": "Jaime Cy",
+   "gmv": 103.21
+  },
+  {
    "handle": "jengenxshop",
    "name": "jengenxshop",
    "gmv": 98.05
@@ -440,11 +445,6 @@
    "handle": "mylifeasamerica",
    "name": "mylifeasamerica",
    "gmv": 74.89
-  },
-  {
-   "handle": "skgot5onit",
-   "name": "skgot5onit",
-   "gmv": 71.98
   }
  ]
 }
